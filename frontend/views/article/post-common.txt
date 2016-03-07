@@ -1,0 +1,418 @@
+<div id="post-common">
+    <div class="info-lehoi">
+      <div>
+        <ul>
+          <li>Một địa điểm lí tưởng cho bạn chụp hình vào cuối tuần!</li><br>
+          <li>Không gian đẹp, ấn tượng với lỗi kiến trúc mô phỏng Châu Âu cổ kính mà sang trọng</li><br>
+          <li>Là điểm đến lí tưởng cho những ai chịu khó di chuyển ra ngoài trung tâm để thưởng thức khung cảnh ngoại ô trong lành</li><br>
+        </ul>
+      </div>
+    </div>
+
+<!--begin:microsite-sumary-new-->
+  <div class="microsite-sumary-new">
+    <div class="microsite-box-heading">
+      <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>
+      <b>5</b>
+      bình luận đã chia sẻ
+    </div>
+    <div class="microsite-box-rating-new">
+      <div class="ratings-boxes row">
+        <div class="ratings-numbers col-sm-2 col-xs-6">
+          <a href="#">
+            <span>
+              <b style="color: #8E44AD;">0</b>
+            </span>
+            <span>Tuyệt vời</span>
+          </a>
+        </div>
+
+        <div class="ratings-numbers col-sm-2 col-xs-6">
+          <a href="#">
+            <span>
+              <b style="color: #03ae03;">5</b>
+            </span>
+            <span>Khá tốt</span>
+          </a>
+        </div>
+        
+        <div class="ratings-numbers col-sm-2 col-xs-6">
+          <a href="#">
+            <span>
+              <b style="color: #333;">0</b>
+            </span>
+            <span>Trung bình</span>
+          </a>
+        </div>
+
+        <div class="ratings-numbers col-sm-2 col-xs-6">
+          <a href="#">
+            <span>
+              <b style="color: #cc0000">0</b>
+            </span>
+            <span>Kém</span>
+          </a>
+        </div>
+
+        <div class="ratings-boxes-points col-sm-3 col-xs-12">
+          <div>
+            <span>
+              <b>7.4</b>
+              <span>điểm</span>
+            </span>
+            - Khá tốt
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<!--end:microsite-sumary-new-->
+<!--begin:microsite-box-->
+  <div class="microsite-box">
+    <!--begin:microsite-box-->
+      <div class="microsite-box2">
+          <div>
+               <div id="resreviews">
+          <div id="micro-review-filter" class="micro-review-filter row">
+            <div class="col-sm-2 col-xs-3" style="padding-left: 15px; padding-top: 5px;">
+              <span>Sắp xếp theo</span>
+            </div>
+            <div class="btn-group col-sm-3 col-xs-4">
+                <button type="button" class="btn btn-default">Có hình ảnh</button>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu col-xs-4">
+                    <li><a href="#">-Tất cả-</a></li>
+                    <li><a href="#">Có hình ảnh</a></li>
+                    <li><a href="#">Không có hình</a></li>
+                    <li><a href="#">Của bạn bè</a></li>
+                  </ul>
+            </div>
+            <div class="btn-group col-sm-3">
+                <button type="button" class="btn btn-default">Mới nhất</button>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Mới nhất</a></li>
+                    <li><a href="#">Cũ nhất</a></li>
+                  </ul>
+            </div>
+          </div>
+          <!--end:micro-review-filter-->
+          <div id="review-list">
+
+            <div class="album">
+              <div class="micro-home-recent-review">
+                <article class="micro-home-review-item row">
+                  <div class="leftimage col-md-1 col-sm-2 col-xs-12">
+                    <div class="microsite-review-new-avatar">
+                      <a class="user-link" href="#">
+                        <img src="images/kelsi-bichtran-avatar-286-635798537389271265.jpg">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="rightdesc col-md-11 col-sm-10 col-xs-12">
+                    <div class="user">
+                      <a class="user-link">
+                        <span>Dân Bích Chương</span>
+                      </a>
+                      <span class="time-row">
+                        -
+                        <span class="address">15/01/2016 14:39</span>
+                      </span>
+                    </div>
+                    <!--end:user-->
+                    <div class="photos">
+                      <ul class="list">
+                        <li class="review-pic-col-1 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-long-island-136-635884655204506793.jpg">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div><!--end:album-->
+
+            <div class="album">
+              <div class="micro-home-recent-review">
+                <article class="micro-home-review-item row">
+                  <div class="leftimage col-md-1 col-sm-2 col-xs-12">
+                    <div class="microsite-review-new-avatar">
+                      <a class="user-link" href="#">
+                        <img src="images/foody-avatar-667-635480583378993638.jpg">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="rightdesc col-md-11 col-sm-10 col-xs-12">
+                    <div class="user">
+                      <a class="user-link">
+                        <span>Duy Anh Nguyen</span>
+                      </a>
+                      <span class="time-row">
+                        -
+                        <span class="address">06/07/2015 19:56</span>
+                      </span>
+                    </div>
+                    <!--end:user-->
+                    <div class="desc">Long Island # phim trường quận 9# ducks :))</div>
+
+                    <div class="photos">
+                      <ul class="list row">
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-634-635718094177613416.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-618-635718094162915738.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-649-635718094160259257.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-634-635718094177613416.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-634-635718094177613416.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-618-635718094162915738.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-634-635718094177613416.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-618-635718094162915738.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-649-635718094160259257.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-634-635718094177613416.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-634-635718094177613416.jpg">
+                          </a>
+                        </li>
+                        <li class="col-md-2 col-sm-4 col-xs-6 micro-home-album-img">
+                          <a href="">
+                            <img src="images/foody-checkin-long-island-618-635718094162915738.jpg">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <div class="picturecounts">
+                        <a href="" data-bind=""><b>12 </b>hình ảnh</a>
+                      </div>
+                    </div>
+
+                    <div class="share">
+                      <div>
+                        <a href="">
+                          <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                          <span>Thảo luận</span>
+                        </a>
+                        <a class="review-helpful-link review-like-dislike-link" href="">
+                          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                          <span>Thích
+                            <span data-bind="">2</span>
+                          </span>
+                        </a>
+                        <a href="">
+                          <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+                          <span>Báo lỗi</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="review-reply">
+                      <div class="review-all-comment">
+                        <a href="">Hiện tất cả (<span>10</span>)</a>
+                      </div>
+                      <div style="margin-bottom: 10px;">
+                        <div class="review-reply-item row">
+                          <div class="review-reply-item-avatar col-md-1 col-sm-1 col-xs-2">
+                            <a href="">
+                              <img src="images/foody-avatar-667-635480583378993638.jpg">
+                            </a>
+                          </div>
+                          <div class="review-reply-item-content col-md-11 col-sm-11 col-xs-10">
+                            <a class="user-link" href="">Duy Anh</a>
+                            <span>Yeap</span>
+                            <br>
+                            <span class="address">22/08/2015 11:05</span>
+                            <a class="userlike" href="">like</a>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                          </div>
+                        </div>
+
+                        <div class="review-reply-item row">
+                          <div class="review-reply-item-avatar col-md-1 col-sm-1 col-xs-2">
+                            <a href="">
+                              <img src="images/foody-avatar-667-635480583378993638.jpg">
+                            </a>
+                          </div>
+                          <div class="review-reply-item-content col-md-11 col-sm-11 col-xs-10">
+                            <a class="user-link" href="">Le</a>
+                            <span>Bạn ơi, cho mình hỏi nếu như mình chụp hình cưới ekip 6 người, không biết trong phim trường tính phí thế nào nhỉ?</span>
+                            <br>
+                            <span class="address">22/02/2016 14:08</span>
+                            <a class="userlike" href="">like</a>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div><!--end:album-->
+
+          </div>
+          <!--end:micro-review-filter-->
+            </div><!--end:resreviews-->
+        </div>
+      </div><!--end:microsite-box2-->
+  </div><!--end:microsite-box-->
+
+  <!--end:micro-whiterow-->
+<div class="micro-whiterow">
+  <div class="microsite-box">
+    <div class="microsite-box-heading">
+      <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>
+      Hình ảnh
+    </div>
+    <div class="microsite-box-album">
+      <div class="micro-box-content row">
+        
+        <div class="micro-home-album col-sm-3 padd-right">
+          <div class="img-album-mon-an">
+            <a href="">
+              <img src="images/foody-long-island-74322-635346600599136250.jpg">
+            </a>
+          </div> 
+          <div class="album">
+            <a href="">Món ăn</a>
+          </div>
+          <div class="by">
+            <span class="píc-album-mon-an-count">3</span>
+            ảnh
+          </div>
+        </div>
+
+        <div class="micro-home-album col-sm-3 padd-right">
+          <div class="img-album-khong-gian">
+            <a href="">
+              <img class="img-responsive" src="images/foody-long-island-136-635884655204506793.jpg">
+            </a>
+          </div> 
+          <div class="album">
+            <a href="">Không gian</a>
+          </div>
+          <div class="by">
+            <span class="píc-album-mon-an-count">81</span>
+            ảnh
+          </div>
+        </div>
+
+        <div class="micro-home-album col-sm-3 padd-right">
+          <div class="img-album-thuc-don">
+            <a href="">
+              <img class="img-responsive" src="images/foody-long-island-74322-635346600603355000.jpg">
+            </a>
+          </div> 
+          <div class="album">
+            <a href="">Thực đơn</a>
+          </div>
+          <div class="by">
+            <span class="píc-album-mon-an-count">1</span>
+            ảnh
+          </div>
+        </div>
+
+        <div class="micro-home-album col-sm-3 padd">
+          <div class="img-album-tong-hop">
+            <a href="">
+              <img class="img-responsive" src="images/foody-checkin-long-island-264-635718094136505716.jpg">
+            </a>
+          </div> 
+          <div class="album">
+            <a href="">Tổng hợp</a>
+          </div>
+          <div class="by">
+            <span class="píc-album-mon-an-count">31</span>
+            ảnh
+          </div>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end:micro-whiterow-->
+
+
+<div class="micro-greyrow">
+  <div class="microsite-box">
+    <div class="microsite-box-heading">
+      <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>
+      Thông tin và Bản đồ
+    </div>
+    <div class="microsite-box-info">
+      <div class="microsite-box-content">
+        <div class="micro-home-intro row">
+          <div class="microsite-map col-sm-9">
+            <a href="linkmap">
+              <img src="images/foody-map-36210_10-8112370000000_106-8492130000000.jpg">
+            </a>
+          </div>
+          <div class="microsite-map-add col-sm-3 row">
+            <div class="microsite-map-link">
+              <a class="col-xs-6" href="" style="background-color: #39b3d7;">Xem bản đồ lớn</a>
+              <a class="col-xs-6" href="" style="background-color: #9a9a93;"> Báo lỗi vị trí</a>
+            </div>
+            <div class="map-overdetail col-xs-12">
+              <div>Vị trí khu vực</div>
+              <a class="map-font" href="">Phước Long A</a>
+              <div style="margin-top: 10px;">
+                Ở gần
+              <div class="map-font">Ngã 3 Long Phước</div>
+              Cách ngã 3 Long Phước khoảng 50m
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--end:microsite-box-->
+</div><!--end:micro-greyrow-->
+</div>

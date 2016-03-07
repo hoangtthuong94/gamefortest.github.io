@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Raleway, sans-serif;
+    font-family: "Roboto Regular",sans-serif;
     font-size: 12px;
     line-height: 24px;
     color: #6b6e80;
@@ -59,6 +59,7 @@ body {
     border-radius: 2px
 }
 
+
 #menu a {
     color: #5bc0de;
     text-decoration: none;
@@ -83,8 +84,7 @@ hr {
     border-top-color: #eaeaea
 }
 
-/* begin:navbar; */
-#menu.navbar-default {
+#menu .navbar-default {
     background-color: #fff;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -94,7 +94,7 @@ hr {
     border-color: #fff
 }
 
-#menu.navbar-default .navbar-brand {
+#menu .navbar-default .navbar-brand {
     color: #5bc0de;
     font-size: 28px;
     font-weight: 400;
@@ -107,11 +107,11 @@ hr {
     transition: all .2s ease-in-out
 }
 
-#menu.navbar-default .navbar-brand span {
+#menu .navbar-default .navbar-brand span {
     font-weight: 800
 }
 
-#menu.navbar-default .navbar-brand:hover {
+#menu .navbar-default .navbar-brand:hover {
     color: #269abc;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -120,39 +120,39 @@ hr {
     transition: all .2s ease-in-out
 }
 
-#menu.navbar-default .navbar-nav>li>a {
+#menu .navbar-default .navbar-nav>li>a {
     color: #898ba2;
     font-size: 16px;
     text-shadow: none;
     padding: 25px 20px
 }
 
-#menu.navbar-default .navbar-nav>li>a:focus,
-#menu.navbar-default .navbar-nav>li>a:hover {
+#menu .navbar-default .navbar-nav>li>a:focus,
+#menu .navbar-default .navbar-nav>li>a:hover {
     color: #242636;
     background-color: transparent
 }
 
-#menu.navbar-default .navbar-nav>.active>a,
-#menu.navbar-default .navbar-nav>.active>a:focus,
-#menu.navbar-default .navbar-nav>.active>a:hover {
+#menu .navbar-default .navbar-nav>.active>a,
+#menu .navbar-default .navbar-nav>.active>a:focus,
+#menu .navbar-default .navbar-nav>.active>a:hover {
     color: #5bc0de;
     font-weight: 800;
     background-color: transparent
 }
 
-#menu.navbar-default .navbar-nav li.dropdown.open>a,
-#menu.navbar-default .navbar-nav li.dropdown.open>a:hover {
+#menu .navbar-default .navbar-nav li.dropdown.open>a,
+#menu .navbar-default .navbar-nav li.dropdown.open>a:hover {
     color: #fff;
     background-color: #5bc0de
 }
 
-#menu.navbar-transparent {
+#menu .navbar-transparent {
     background-color: transparent;
     border-color: transparent
 }
 
-#menu.navbar-transparent .navbar-brand {
+#menu .navbar-transparent .navbar-brand {
     color: #5bc0de;
     font-weight: 700;
     font-size: 36px;
@@ -160,23 +160,23 @@ hr {
     padding-bottom: 30px
 }
 
-#menu.navbar-transparent .navbar-brand:hover {
+#menu .navbar-transparent .navbar-brand:hover {
     color: #5bc0de
 }
 
-#menu.navbar-transparent .navbar-nav>li>a {
+#menu .navbar-transparent .navbar-nav>li>a {
     color: #fff;
     font-size: 16px;
     padding: 35px 25px 30px
 }
 
-#menu.navbar-transparent .navbar-nav>li>a:focus,
-.navbar-transparent .navbar-nav>li>a:hover {
+#menu .navbar-transparent .navbar-nav>li>a:focus,
+#menu .navbar-transparent .navbar-nav>li>a:hover {
     color: #fff
 }
 
-#menu.navbar-transparent .navbar-nav>li>a:focus::before,
-#menu.navbar-transparent .navbar-nav>li>a:hover::before {
+#menu .navbar-transparent .navbar-nav>li>a:focus::before,
+#menu .navbar-transparent .navbar-nav>li>a:hover::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -186,19 +186,19 @@ hr {
     border-bottom: 2px dashed #fff
 }
 
-#menu.navbar-transparent .navbar-nav li.dropdown.open>a::before,
-#menu.navbar-transparent .navbar-nav li.dropdown.open>a:focus::before,
-#menu.navbar-transparent .navbar-nav li.dropdown.open>a:hover::before,
-#menu.navbar-transparent .navbar-nav>.active>a:before,
-#menu.navbar-transparent .navbar-nav>.active>a:focus::before,
-#menu.navbar-transparent .navbar-nav>.active>a:hover::before {
+#menu .navbar-transparent .navbar-nav li.dropdown.open>a::before,
+#menu .navbar-transparent .navbar-nav li.dropdown.open>a:focus::before,
+#menu .navbar-transparent .navbar-nav li.dropdown.open>a:hover::before,
+#menu .navbar-transparent .navbar-nav>.active>a:before,
+#menu .navbar-transparent .navbar-nav>.active>a:focus::before,
+#menu .navbar-transparent .navbar-nav>.active>a:hover::before {
     content: '';
     border-bottom: none
 }
 
-#menu.navbar-transparent .navbar-nav>.active>a,
-#menu.navbar-transparent .navbar-nav>.active>a:focus,
-#menu.navbar-transparent .navbar-nav>.active>a:hover {
+#menu .navbar-transparent .navbar-nav>.active>a,
+#menu .navbar-transparent .navbar-nav>.active>a:focus,
+#menu .navbar-transparent .navbar-nav>.active>a:hover {
     color: #fff;
     text-shadow: none;
     background-color: transparent
@@ -227,7 +227,7 @@ hr {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(50, 66, 90, .65)
+    background-color: rgba(50, 66, 90, .50)
 }
 
 #header blockquote {
@@ -321,9 +321,9 @@ hr {
 /*begin:footer*/
 #footer{
     width: 100%;
-    color: #ddd;
-    padding: 80px 0 60px;
-    background-color: #1b1d2a;
+    color: #fff;
+    padding: 60px 0 60px;
+    background-color: #228aa9;
     -webkit-background-size: cover!important;
     -moz-background-size: cover!important;
     -ms-background-size: cover!important;
@@ -342,32 +342,36 @@ hr {
 
 #footer .widget {
     margin-bottom: 20px
+    padding-right: 5px;
 }
 
 #footer .widget h3 {
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 20px
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
 }
 
 #footer .widget ul>li>a {
-    color: #5bc0de
+    color: #fff;
 }
 
 #footer .widget ul>li>a:before {
     content: "\f005";
     font-family: FontAwesome;
     font-size: 11px;
-    color: #ccc;
+    color: #fff;
     padding-right: 10px
 }
 
 #footer .widget ul>li>a:hover {
-    color: #ccc
+    color: #333;
+    text-decoration: none;
 }
 
 #footer .widget ul>li>a:hover:before {
-    color: #5bc0de
+    color: #333;
 }
 
 #footer .footer-logo {
@@ -382,7 +386,7 @@ hr {
 #copyright {
     width: 100%;
     padding: 15px 0 5px;
-    background-color: #0f101a;
+    background-color: #1d7792;
     color: #ccc;
     font-size: 13px
 }
@@ -391,7 +395,7 @@ hr {
     position: relative;
     width: 32px;
     height: 32px;
-    background: #6b6e80;
+    background: #fff;
     display: block;
     border-radius: 100%
 }
@@ -444,7 +448,7 @@ hr {
 }
 
 /*animation*/
-@-webkit-keyframes zenFadeIn
+/*@-webkit-keyframes zenFadeIn
     {0%{opacity:0;}100%{opacity:1;}}
 @keyframes zenFadeIn{0%{opacity:0;}100%{opacity:1;}}
 .zenFadeIn{
@@ -540,7 +544,7 @@ hr {
 }
 @keyframes zenFadeInRightBig{
     0%{opacity:0;transform:translateX(200px);}
-    100%{opacity:1;transform:translateX(0);}}
+    100%{opacity:1;transform:translateX(0);}}*/
     
 /*css for avatar*/
 
@@ -552,21 +556,3 @@ hr {
             border-radius: 0 3px 3px 0;
 }
 
-.demo{
-    position: fixed;
-    z-index: 999;
-    right: 0;
-    top: 68px;
-    background-color: #fff;
-    width: 138px;
-    height: 150px;
-    padding: 0;
-    margin: 0;
-    border: 2px solid #ddd;
-    border-left: none;
-    -webkit-border-radius: 0 3px 3px 0;
-       -moz-border-radius: 0 3px 3px 0;
-        -ms-border-radius: 0 3px 3px 0;
-         -o-border-radius: 0 3px 3px 0;
-            border-radius: 0 3px 3px 0;
-}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myapp">
 
 <head>
     <meta charset="utf-8">
@@ -7,433 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <title>Review Product Technology</title>
     <!--Bootstrap core CSS-->
-    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    <script src="lib/js/jquery-1.11.3.min.js"></script>
-    <script src="lib/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/jquery-1.11.3.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script language="javascript" src="lib/angular.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="lib/css/ionicons.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/ionicons.min.css">
+
     <!--CSS customize-->
-    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-   
-    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif:700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
 
    
 </head>
 
-<body>
-    <!-- begin:navbar -->
-    <nav id="menu" class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-top">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><span>Lehoiviet</span></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-top">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Trang Chủ</a></li>
-                    <li><a href="#">Lễ hội</a></li>
-                    <li><a href="#">Tìm Kiếm</a></li>
-                    <li><a href="#">Danh Mục</a></li>
-                    <li><a type="button" data-toggle="modal" data-target="#dangnhap">Đăng Nhập</a></li>
-                    <li ><a href="#">Viết Nhận Xét</a></li>
-                    <li class="btn-group">
-                        <button class="ava" style="margin-top:8px; border-radius:10px; padding:0px; border:0px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                          <img src="image/ava.jpg" style="width:50px;border-radius:10px">
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Xem thông tin</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Đăng xuất</a></li>
-                          </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <!--end:nvabar-->
+<body ng-controller="MainController">
 
-    <!--begin:Phần Modal Đăng kí-->
-       
-    <!--end:Phần Modal Đăng kí-->
+    <div id="menu" ng-include="'views/public/menu.html'"></div>
+    <div ng-include="'views/public/header.html'"></div>
 
-    <!--begin:Phần Modal Login-->
-       <div class="modal fade" id="dangnhap" role="dialog">
-    <div class="modal-dialog">
-      <form role="form">
-        <!-- Modal content-->
-            <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title"><i class="fa fa-fw fa-puzzle-piece"></i>Đăng nhập:</h3>
-                  </div>
-                  <div class="modal-body">
-
-                    <div class="form-group">
-                      <label>Username:</label>
-                      <div class="input-group">
-                        <div class="input-group-addon">
-                          <i class="glyphicon glyphicon-user"></i>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Enter username" autofocus required>
-                      </div><!-- /.input group -->
-                    </div><!-- /.form group -->
-
-                    <div class="form-group">
-                      <label>Password:</label>
-                      <div class="input-group">
-                        <div class="input-group-addon">
-                          <i class="glyphicon glyphicon-lock"></i>
-                        </div>
-                        <input type="Password" class="form-control" placeholder="Enter password" required>
-                      </div><!-- /.input group -->
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> Ghi nhớ
-                        </label>
-                      </div>    
-                      <a href="">Bạn cần một tài khoản?</a>     
-                    </div><!-- /.form group -->
-  
-                  </div><!-- /.box-body --> 
-                  <div class="modal-footer">
-                    <button type="Submit" class="btn btn-danger" style="float:right;">Sign in</button>
-                  </div>
-            </div><!-- /.modal -->
-      </form>
-    </div>
-  </div>
-    <!--end:Phần Modal Login-->
-
-    <!--begin:Phần Modal quên password-->
-    
-    <!--end:Phần Modal quên password-->
-
-    <!--begin:header-->
-    <section id="header" style="background-image: url(PictureBring/RockIslandsPalau_1920x1200.jpg);">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <blockquote>
-                    <p>Tham quan những lễ hội truyền thống với những văn hóa độc đáo trên mọi miền tổ quốc</p>
-                </blockquote>
-            </div>
-        </div>
-        <div class="overlay"></div>
-    </section>
-    <!--end:header-->
-
+<div id="#"></div>
 <!--begin:main-->
 <div id="" class="container">
-<!--begin:promotion-->
-<section id="promotion" class="row">
-  <h2 class="col-md-12 ">Nội dung</h2>
-    <div class="promotion-box col-md-3 col-sm-3 col-xs-6 border-dot">
-      <p>
-        <a href="#">
-          <img class="img-responsive" src="PictureBring/dao-phu-quy-ivivu.com-1-370x215.jpg" alt="7 cù lao biển đẹp của Việt Nam bạn không đi không được" />
-        </a>
-      </p>
-      <p>7 cù lao biển đẹp của Việt Nam bạn không đi không được</p>
+    <!--begin:promotion-->
+    <section id="promotion" class="row">
+        <div ng-include="'views/public/promotion.html'"></div>
+    </section>
+    <!--end:promotion-->
+    <!--begin:main-->
+    <div id="main" class="row">
+
+    <div id="main-left" class="col-md-9">
+        <div ng-include="'views/public/content_home.html'"></div>
+    </div><!--end:col-md-9-->
+
+    <div id="sidebar" class="col-md-3">
+        <div ng-include="'views/public/sidebar.html'"></div>
+    </div><!--end:sidebar-->
     </div>
-    <div class="promotion-box col-md-3 col-sm-3 col-xs-6 border-dot">
-      <p>
-        <a href="#">
-          <img class="img-responsive" src="PictureBring/dao-phu-quy-ivivu.com-1-370x215.jpg" alt="7 cù lao biển đẹp của Việt Nam bạn không đi không được" />
-        </a>
-      </p>
-      <p>7 cù lao biển đẹp của Việt Nam bạn không đi không được<p>
-    </div>
-    <div class="promotion-box col-md-3 col-sm-3 col-xs-6 border-dot">
-      <p>
-        <a href="#">
-          <img class="img-responsive" src="PictureBring/dao-phu-quy-ivivu.com-1-370x215.jpg" alt="7 cù lao biển đẹp của Việt Nam bạn không đi không được" />
-        </a>
-      </p>
-      <p>7 cù lao biển đẹp của Việt Nam bạn không đi không được<p>
-    </div>
-    <div class="promotion-box col-md-3 col-sm-3 col-xs-6 ">
-      <p>
-        <a href="#">
-          <img class="img-responsive" src="PictureBring/dao-phu-quy-ivivu.com-1-370x215.jpg" alt="7 cù lao biển đẹp của Việt Nam bạn không đi không được" />
-        </a>
-      </p>
-      <p>7 cù lao biển đẹp của Việt Nam bạn không đi không được<p>
-    </div>
-</section>
-<!--end:promotion-->
-<!--begin:main-->
-<div id="main" class="row">
-<div></div>
-
-<div id="main-left" class="col-md-9">
-<!-- begin:content -->
-<div id="content">
-    <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-12 zenFadeInRightBig">
-            <div class="post-container">
-                        <div class="post-content">
-                            <img src="PictureBring/sac-mau-ky-ao-cua-nhung-le-hoi-thang-hai-ivivu-1.jpg" alt="sac-mau-ky-ao-cua-nhung-le-hoi-thang-hai">
-                            <div class="heading-title heading-small">
-                                <h2><a href="#">Sắc màu kỳ ảo của những lễ hội tháng hai</a></h2>
-                            </div>
-                            <div class="post-meta">
-                                <span>By <a href="#" title="Posts by admin" rel="author">Admin</a></span>
-                                <span>05/02/2016</span>
-                            </div>
-                            <p>Không chỉ có Tết Nguyên đán ở các nước châu Á...</p>
-
-                            <div class="post-atribut">
-                              <div class="row">
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-heart"></i> 1000</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-comments"></i> 420</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-eye"></i> 2500</span></a>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 zenFadeInRightBig">
-            <div class="post-container">
-                        <div class="post-content">
-                            <img src="PictureBring/Top-25-diem-den-du-lich-hang-dau-the-gioi-ivivu-3-370x215.jpg" alt="Top-25-diem-den-du-lich-hang-dau-the-gioi">
-                            <div class="heading-title heading-small">
-                                <h2><a href="#">Top 25 điểm đến du lịch hàng đầu thế giới</a></h2>
-                            </div>
-                            <div class="post-meta">
-                                <span>By <a href="#" title="Posts by admin" rel="author">Admin</a></span>
-                                <span>29/01/2016</span>
-                            </div>
-                            <p>Thu hút khoảng 27,77 triệu lượt du khách quốc tế,  </p>
-
-                            <div class="post-atribut">
-                              <div class="row">
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-heart"></i> 140</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-comments"></i> 300</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-eye"></i> 2500</span></a>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-            </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 zenFadeInRightBig">
-            <div class="post-container">
-                        <div class="post-content">
-                            <img src="PictureBring/Thieu-nu-ruoc-phan-ve-cho-hoa-tai-festival-Da-Lat-ivivu-1.jpg" alt="Thieu-nu-ruoc-phan-ve-cho-hoa-tai-festival-Da-Lat">
-                            <div class="heading-title heading-small">
-                                <h2><a href="#">Thiếu nữ rước phấn về cho hoa tại festival Đà Lạt</a></h2>
-                            </div>
-                            <div class="post-meta">
-                                <span>By <a href="#" title="Posts by admin" rel="author">Admin</a></span>
-                                <span>30/12/2015</span>
-                            </div>
-                            <p>Nghệ nhân Việt Nam và các nước Hàn Quốc</p>
-
-                            <div class="post-atribut">
-                              <div class="row">
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-heart"></i> 200</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-comments"></i> 30</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-eye"></i> 1500</span></a>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                    </div>  
-            </div>          
-        
-    </div>
-<!--end:content-->
-<div class="clearfix "></div>
-
-<!--begin:article-->
-  <div class="article">
-    <div class="row">
-        <div class="col-md-4 ">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="PictureBring/hang-en-ivivu.jpg" alt="hang-en"/>
-                    <div class="image-overlay-content">
-                        <h4>Ghi dấu tuổi trẻ rực rỡ với 10 trải nghiệm du lịch thú vị nhất</h4>
-                        <p class="">Mỗi người chỉ trải qua một lần tuổi trẻ, thế nên bạn hãy dùng tuổi trẻ của mình để tận hưởng những trải nghiệm du lịch...</p>
-                    </div>
-                </a>
-            </div>
-        </div>      
-
-        <div class="col-md-4">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="PictureBring/cho-nga-diem-den-khong-the-bo-qua-khi-du-lich-Phnom-Penh-ivivu-3-370x215.jpg" alt="cho-nga-diem-den-khong-the-bo-qua-khi-du-lich-Phnom-Penh"/>
-                    <div class="image-overlay-content">
-                        <h4>CHỢ NGA – ĐIỂM ĐẾN KHÔNG THỂ BỎ QUA KHI DU LỊCH PHNOM PENH</h4>
-                        <p class="">Nằm ở phía Nam của thành phố Phnom Penh, chợ Nga hay Psah Toul Tom Poung là một khu chợ khá đông đúc và nhộn nhịp...</p>
-                    </div>
-                </a>
-            </div>
-        </div>      
-    
-
-        <div class="col-md-4">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="PictureBring/du-lich-bangkok-ivivu-9-370x215.jpg" alt="du-lich-bangkok"/>
-                    <div class="image-overlay-content">
-                        <h4>10 điều thú vị đang đợi bạn trong chuyến du lịch Bangkok</h4>
-                        <p class="">Vui tươi, náo nhiệt và có quá nhiều thứ để khám phá, du lịch Bangkok luôn có sức hấp dẫn...</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    
-        <div class="col-md-4">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="PictureBring/du-lich-mot-minh-ivivu-1.jpg" alt="du-lich-mot-minh" />
-                    <div class="image-overlay-content">
-                        <h4>8 điểm đến ở Việt Nam cho người thích đi du lịch một mình</h4>
-                        <p class="">Du lịch một mình đang dần trở thành một xu hướng mới được nhiều bạn trẻ Việt yêu thích...</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="PictureBring/chua-banh-xeo-co-mot-khong-hai-o-vung-tau-ivivu-2.jpg" alt="chua-banh-xeo-co-mot-khong-hai-o-vung-tau"/>
-                    <div class="image-overlay-content">
-                        <h4>Chùa Bánh Xèo có một không hai ở Vũng Tàu</h4>
-                        <p class="">Bánh xèo chay là món ăn mà Ni viện Thiện Hòa (Tân Thành, Bà Rịa – Vũng Tàu) dùng để đãi khách và tên gọi của chùa cũng bắt đầu từ đó.</p>
-                    </div>
-                </a>
-            </div>
-        </div>      
-    
-        <div class="col-md-4">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="PictureBring/Den-Hue-vao-mua-diu-dang-nhat-trong-nam-ivivu-1.jpg" alt="Den-Hue-vao-mua-diu-dang-nhat-trong-nam"/>
-                    <div class="image-overlay-content">
-                        <h4>Đến du lịch Huế vào mùa dịu dàng nhất trong năm</h4>
-                        <p class="">Sau Tết Âm lịch, thời tiết mát mẻ, cố đô thu hút du khách đến tham quan cung điện.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-  </div>
-
-<!--end:article-->
- </div>
-</div><!--end:col-md-9-->
-<div id="sidebar" class="col-md-3">
-  nội dung bên phải
-</div>
-</div>
-<!--end:main-->
+    <!--end:main-->
 
 </div><!--end:container -->
 
 
-    <!--begin:footer-->
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3">
-                    <div class="widget">
-                        <h3>Bài nổi bật</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Hang gia o Nguyen Kim</a></li>
-                            <li><a href="#">iPhone moi ra lo tuyet dep</a></li>
-                            <li><a href="#">May tinh lap rap nhanh hu</a></li>
-                            <li><a href="#">CPU mua o dau</a></li>
-                            <li><a href="#">Nokia hang lom</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="widget">
-                        <h3>Liên kết</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Tinh te</a></li>
-                            <li><a href="#">dienmay.com</a></li>
-                            <li><a href="#">CNTT</a></li>
-                            <li><a href="#">uit.edu.vn</a></li>
-                            <li><a href="#">vnu.edu.vn</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-5">
-                    <div class="footer-logo">
-                        <h2><i class="fa fa-recycle"></i> BestFriends</h2>
-                        <p>Networking and Telemunication
-                            <br>The University of Infomation Technology</p>
-                        <br>
-                        <p class="muted">© 2015 Final project.</p>
-                        <a href="#">Terms of Service</a> <span>/</span>
-                        <a href="#">Privacy</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--end:footer-->
-    <!--begin:copyright-->
-    <section id="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 copy-left">
-                    <p>Copyright &copy; 2015 <strong>BestFriends Team</strong>. All Right Reserved.</p>
-                </div>
-                <div class="col-md-6 col-sm-6 copy-right">
-                    <ul class="list-inline social-icon">
-                        <li><a href="#" class="icon-twitter" rel="tooltip" title="" data-placement="top" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icon-facebook" rel="tooltip" title="" data-placement="top" data-original-title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
-                        <li><a href="#" class="icon-youtube" rel="tooltip" title="" data-placement="top" data-original-title="Youtube"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#" class="icon-instagram" rel="tooltip" title="" data-placement="top" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--end:copyright-->
-    <script type="text/javascript " src="lib/js/jquery-1.11.3.min.js "></script>
-     <script type="text/javascript " src="lib/js/jquery.parallax.js"></script>
-    <script type="text/javascript " src="js/script.js "></script>
+<!--begin:footer-->
+<section id="footer" ng-include="'views/public/footer.html'"></section>
+<!--end:footer-->
+<!--begin:copyright-->
+<section id="copyright" ng-include="'views/public/copyright.html'"></section>
+<!--end:copyright-->
 
+<div class="btn-top">
+  <a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></span></a>
+</div>
 
+<script type="text/javascript " src="js/script.js "></script>
+
+<script>
+    angular.module("myapp", []).controller("MainController", function($scope) {
+
+    });
+</script>
                         
 </body>
 
