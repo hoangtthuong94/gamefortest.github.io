@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>Review Product Technology</title>
+    <!--Bootstrap core CSS-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/jquery-1.11.3.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script language="javascript" src="lib/angular.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="lib/bootstrap/css/ionicons.min.css">
+
+    <!--CSS customize-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif:700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
+
+   
+</head>
+
+<body ng-controller="MainController">
+
+    <div id="menu" ng-include="'views/public/menu.html'"></div>
+    <div ng-include="'views/public/header.html'"></div>
+
+<div id="#"></div>
+<!--begin:main-->
+<div id="" class="container">
+    <!--begin:promotion-->
+    <section id="promotion" class="row">
+        <div ng-include="'views/public/promotion.html'"></div>
+    </section>
+    <!--end:promotion-->
+    <!--begin:main-->
+    <div id="main" class="row">
+
+    <div id="main-left" class="col-md-9">
+        <div ng-include="'views/public/content_home.html'"></div>
+    </div><!--end:col-md-9-->
+
+    <div id="sidebar" class="col-md-3">
+        <div ng-include="'views/public/sidebar.html'"></div>
+    </div><!--end:sidebar-->
+    </div>
+    <!--end:main-->
+
+</div><!--end:container -->
+
+
+<!--begin:footer-->
+<section id="footer" ng-include="'views/public/footer.html'"></section>
+<!--end:footer-->
+<!--begin:copyright-->
+<section id="copyright" ng-include="'views/public/copyright.html'"></section>
+<!--end:copyright-->
+
+<div class="btn-top">
+  <a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></span></a>
+</div>
+
+<script type="text/javascript " src="js/script.js "></script>
+
+<script>
+    angular.module("myapp", []).controller("MainController", function($scope) {
+
+    });
+</script>
+                        
+</body>
+
+
+</html>
