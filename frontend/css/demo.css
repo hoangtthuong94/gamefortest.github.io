@@ -23,7 +23,7 @@
 
 #post-decription .main-image img {
   width: 100%;
-  height: 340px;
+  height: 343px;
 }
 
 #post-decription .main-info .brleft {
@@ -120,6 +120,48 @@
 #post-common .microsite-box-heading {
   cursor: point;
   font-size: 20px;
+}
+
+#post-common #micro-button-bar {
+  margin-bottom: 30px;
+}
+
+#post-common #micro-button-bar ul, #post-common #micro-button-bar li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: inline;
+}
+
+#post-common #micro-button-bar .res-common-ratting {
+  background-color: #fff;
+  padding: 20px;
+}
+
+#post-common #micro-button-bar .res-common-ratting .ratting-action li {
+  background-color: #f4f4f4;
+}
+
+#post-common #micro-button-bar .res-common-ratting .ratting-action span {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+#post-common #micro-button-bar .res-common-ratting .ratting-action a {
+  color: #6b6e80;
+  border: 1px solid #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#post-common #micro-button-bar .res-common-ratting .ratting-action a:hover {
+  text-decoration: none;
+  color: #5bc0de;
+  background-color: #eee;
+}
+
+#post-common #micro-button-bar .res-common-ratting .ratting-action .content-center {
+  text-align: center;
 }
 
 #post-common .microsite-sumary-new .microsite-box-rating-new {

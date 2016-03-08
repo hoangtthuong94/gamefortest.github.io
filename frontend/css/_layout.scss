@@ -23,6 +23,8 @@
 ul, li{
         list-style: none;
     }
+
+
 #post-decription{
     display: block;
     max-height: 340px;
@@ -106,6 +108,36 @@ ul, li{
     .microsite-box-heading{
         cursor: point;
         font-size: 20px;
+    }
+
+     #micro-button-bar{
+        ul, li{
+                padding:0px;
+                margin: 0px;
+                list-style: none;
+                display: inline;
+            }
+        padding-left: 15px;
+        .res-common-ratting{
+            background-color: $primary-article;
+            padding: 20px;
+            .ratting-action{
+                span{
+                    margin-right: 5px;
+                    margin-left: 10px
+                }
+                a{
+                    color: $primary-body-color;
+                    background-color: #f4f4f4;
+                    border: 1px solid #fff;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+        .col-md-3{
+            text-align: center;
+        }
     }
     .microsite-sumary-new{
         .microsite-box-rating-new{

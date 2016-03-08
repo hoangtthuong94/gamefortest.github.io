@@ -115,6 +115,39 @@ ul, li {
   font-size: 20px;
 }
 
+#post-common #micro-button-bar {
+  padding-left: 15px;
+}
+
+#post-common #micro-button-bar ul, #post-common #micro-button-bar li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: inline;
+}
+
+#post-common #micro-button-bar .res-common-ratting {
+  background-color: #fff;
+  padding: 20px;
+}
+
+#post-common #micro-button-bar .res-common-ratting .ratting-action span {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+#post-common #micro-button-bar .res-common-ratting .ratting-action a {
+  color: #6b6e80;
+  background-color: #f4f4f4;
+  border: 1px solid #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#post-common #micro-button-bar .col-md-3 {
+  text-align: center;
+}
+
 #post-common .microsite-sumary-new .microsite-box-rating-new {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.05);

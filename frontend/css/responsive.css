@@ -5,6 +5,10 @@
         height: 180px;
         overflow: hidden
     }
+
+}
+@media screen and (min-width:768px) and (max-width:1999px) {
+
 }
 @media screen and (max-width:767px) {
     .navbar-default .navbar-toggle {
@@ -172,6 +176,12 @@
         float: none;
         text-align: center
     }
+    #post-decription .feature-gallery img{
+        height: 320px;
+    }
+    #post-common .microsite-box #resreviews #review-list .micro-home-recent-review .rightdesc .list img{
+        height: 326px;
+    }
 }
 
 @media screen and (min-width:480px) and (max-width:662px) {
@@ -181,6 +191,7 @@
         height: 200px;
         overflow: hidden
     }
+
 }
 
 @media screen and (max-width:480px) {
@@ -190,4 +201,5 @@
         height: auto;
         overflow: hidden
     }
+
 }
