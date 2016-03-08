@@ -9,7 +9,7 @@ Travel website
 </ul>
 
 <h3>Start Server</h3>
-node ./bin/www
+<small>node server.js</small>
 
 test : http://localhost:3000
 
