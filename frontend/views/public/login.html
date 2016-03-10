@@ -1,43 +1,117 @@
-<div class="modal fade" id="dangnhap" role="dialog">
-    <div class="modal-dialog">
+<div class="modal fadebs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="dangnhap">
+    <div class="modal-dialog modal-sm">
       <form role="form">
         <!-- Modal content-->
             <div class="modal-content">
                   <div class="modal-header">
                     <h3 class="modal-title"><i class="fa fa-fw fa-puzzle-piece"></i>Đăng nhập:</h3>
                   </div>
-                  <div class="modal-body">
 
+                  <div class="modal-body">
+                      <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Username" autofocus required>
+                        <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-user"></i>
+                      </div>
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="Password" class="form-control" placeholder="Password" required>
+                      <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-lock"></i>
+                      </div>
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+
+                <div class="form-group row">
+                    <div class="checkbox col-xs-6">
+                      <label>
+                        <input type="checkbox"> Ghi nhớ
+                      </label>
+                    </div>
+                    <div  class="col-xs-6" style="text-align: right ">
+                        <button type="Submit" class="btn btn-login">Sign in</button>
+                    </div> 
+                </div
+  
+                  </div><!-- /.box-body --> 
+                   <div class="social-or-login center">
+                <span class="bigger-110">Or Login Using</span>
+            </div>
+            <div class="social-login center">
+                <a class="btn btn-primary">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+
+                <a class="btn btn-info">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <a class="btn btn-danger">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </div>
+            <div class="toolbar clearfix row">
+                <div class="col-xs-6" style="text-align: left;">
+                    <a href="#" data-dismiss="modal" data-toggle="modal" data-target="" class="forgot-password-link" >
+                        <i class="fa fa-arrow-left"></i>
+                        I forgot my password
+                    </a>
+                </div>
+
+                <div class="col-xs-6" style="text-align: right;">
+                    <a href="#" data-target="#signup-box" class="user-signup-link">
+                        I want to register
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+               
+            </div><!-- /.modal -->
+      </form>
+    </div>
+  </div>
+
+  <!--begin:forgot password-->
+  <div class="modal fadebs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="forgot-box">
+    <div class="modal-dialog modal-sm">
+      <form role="form">
+        <!-- Modal content-->
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title">Bạn quên mật khẩu:</h3>
+                  </div>
+
+                  <div class="modal-body">
                     <div class="form-group">
-                      <label>Username:</label>
+                      <label>Email:</label>
                       <div class="input-group">
                         <div class="input-group-addon">
                           <i class="glyphicon glyphicon-user"></i>
                         </div>
-                        <input type="text" class="form-control" placeholder="Enter username" autofocus required>
+                        <input type="text" class="form-control" placeholder="Email" autofocus required>
                       </div><!-- /.input group -->
                     </div><!-- /.form group -->
-
-                    <div class="form-group">
-                      <label>Password:</label>
-                      <div class="input-group">
-                        <div class="input-group-addon">
-                          <i class="glyphicon glyphicon-lock"></i>
-                        </div>
-                        <input type="Password" class="form-control" placeholder="Enter password" required>
-                      </div><!-- /.input group -->
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> Ghi nhớ
-                        </label>
-                      </div>    
-                      <a href="">Bạn cần một tài khoản?</a>     
-                    </div><!-- /.form group -->
-  
-                  </div><!-- /.box-body --> 
-                  <div class="modal-footer">
-                    <button type="Submit" class="btn btn-danger" style="float:right;">Sign in</button>
                   </div>
+                <div class="form-group row">
+                    <div  class="col-xs-6" style="text-align: right ">
+                        <button type="Submit" class="btn btn-login">Gửi</button>
+                    </div> 
+                </div>
+           </div>
+
+            <div class="toolbar clearfix">
+                <div style="text-align: right;">
+                    <a href="#" data-target="#signup-box" class="user-signup-link">
+                        back
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+               
             </div><!-- /.modal -->
       </form>
     </div>

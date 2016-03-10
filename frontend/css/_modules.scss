@@ -361,3 +361,75 @@
   border: 2px solid #228aa9;
   border-radius: 20px;
 }
+
+/**/
+#login{
+  .row{
+    margin: 0px;
+  }
+  .col-xs-6{
+    padding: 0px;
+  }
+  .social-or-login {
+    margin-top: 4px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    & :first-child {
+      display: inline-block;
+      background-color: #fff;
+      padding: 0 8px;
+      color: #228aa9;
+      font-size: 13px;
+    }
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 0;
+      right: 0;
+      border-top: 1px dotted #228aa9;
+    }
+  }
+
+  .social-login{
+    a{
+        border-radius: 100%;
+        width: 42px;
+        height: 42px;
+        line-height: 46px;
+        padding: 0;
+        margin: 0 1px;
+        border-width: 0;
+        font-size: 24px;
+    }
+  }
+
+    .forgot-password-link,
+  .user-signup-link {
+    color: #fff;
+  }
+  .btn-login{
+    background-color: #228aa9;
+      color: #fff;
+  }
+  .center{
+      text-align: center;
+  }
+  .toolbar{
+      background-color: #228aa9;
+      padding: 10px 2px 10px 2px;
+      margin: 10px -15px -15px -15px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;;
+    }
+
+}/*#login*/
+    
+
+
+
+
+/**/

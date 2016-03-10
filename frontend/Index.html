@@ -29,39 +29,32 @@
 
 <body ng-controller="MainController">
 
-    <div id="menu" ng-include="'views/public/menu.html'"></div>
-    <div ng-include="'views/public/header.html'"></div>
 
+<div id="menu" ng-include="'views/public/menu.html'"></div>
+<div ng-include="'views/public/header.html'"></div>
+<div id="login" ng-include="'views/public/login.html'"></div>
 <div id="#"></div>
-<!--begin:main-->
 <div id="" class="container">
-    <!--begin:promotion-->
     <section id="promotion" class="row">
         <div ng-include="'views/public/promotion.html'"></div>
     </section>
-    <!--end:promotion-->
-    <!--begin:main-->
     <div id="main" class="row">
 
-    <div id="main-left" class="col-md-9">
-        <div ng-include="'views/public/content_home.html'"></div>
-    </div><!--end:col-md-9-->
+        <div id="main-left" class="col-md-9">
+            <div ng-include="'views/public/content_home.html'"></div>
+        </div>
 
-    <div id="sidebar" class="col-md-3">
-        <div ng-include="'views/public/sidebar.html'"></div>
-    </div><!--end:sidebar-->
+        <div id="sidebar" class="col-md-3">
+            <div ng-include="'views/public/sidebar.html'"></div>
+        </div>
     </div>
-    <!--end:main-->
 
-</div><!--end:container -->
+</div>
 
 
-<!--begin:footer-->
+
 <section id="footer" ng-include="'views/public/footer.html'"></section>
-<!--end:footer-->
-<!--begin:copyright-->
 <section id="copyright" ng-include="'views/public/copyright.html'"></section>
-<!--end:copyright-->
 
 <div class="btn-top">
   <a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></span></a>
