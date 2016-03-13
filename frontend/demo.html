@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>Lehoiviet</title>
+    <!--Bootstrap core CSS-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/jquery-1.11.3.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script language="javascript" src="lib/angular.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="lib/bootstrap/css/ionicons.min.css">
+
+    <!--CSS customize-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif:700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
+
+   <style type="text/css">
+    .social-or-login {
+  margin-top: 4px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.social-or-login :first-child {
+  display: inline-block;
+  background: #F7F7F7;
+  padding: 0 8px;
+  color: #228aa9;
+  font-size: 13px;
+}
+.social-or-login:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px dotted #228aa9;
+}
+.social-login a {
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 46px;
+  padding: 0;
+  margin: 0 1px;
+  border-width: 0;
+}
+.social-login a{
+  font-size: 24px;
+  margin: 0;
+}
+.forgot-password-link,
+.user-signup-link {
+  color: #fff;
+}
+
+/**/
+.btn-login{
+    background-color: #228aa9;
+    color: #fff;
+}
+.center{
+    text-align: center;
+}
+.toolbar{
+    background-color: #228aa9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0px 10px 0px;
+    }
+   </style>
+</head>
+
+<body ng-controller="MainController" class="row">
+<a href="#" class="btn btn-default" id="a-popover">Click Me!</a>
+        <!--content html-->
+        <div id="divContentHTML" style="display:none" class="row">
+            <form role="form" class="col-xs-12">
+                <div class="box">
+                    <div class="box-body">
+
+                      <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Username" autofocus required>
+                            <div class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                        </div><!-- /.input group -->
+                      </div><!-- /.form group -->
+
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input type="Password" class="form-control" placeholder="Password" required>
+                          <div class="input-group-addon">
+                            <i class="glyphicon glyphicon-lock"></i>
+                          </div>
+                        </div><!-- /.input group -->
+                        </div>
+
+                        <div class="form-group">
+                            <div class="checkbox" style="display: inline;">
+                              <label>
+                                <input type="checkbox"> Ghi nhớ
+                              </label>
+                            </div>    
+                         
+                          <button type="Submit" class="btn" style="display: inline; float: right;">Sign in</button>
+                        </div><!-- /.form group -->
+                    </div><!-- /.box-body --> 
+                  </div><!-- /.box -->
+            </form>
+
+            <div class="social-or-login center col-xs-12">
+                <span class="bigger-110">Or Login Using</span>
+            </div>
+            <div class="social-login center col-xs-12">
+                <a class="btn btn-primary">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+
+                <a class="btn btn-info">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <a class="btn btn-danger">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </div>
+            <div class="toolbar clearfix col-xs-12 row">
+                <div class="col-xs-6">
+                    <a href="#" data-target="#forgot-box" class="forgot-password-link">
+                        <i class="ace-icon fa fa-arrow-left"></i>
+                        I forgot my password
+                    </a>
+                </div>
+
+                <div class="col-xs-6" style="text-align: right;">
+                    <a href="#" data-target="#signup-box" class="user-signup-link">
+                        I want to register
+                        <i class="ace-icon fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-md-4">
+        <form role="form">
+          <div class="box box-danger">
+                <div class="box-header">
+                  <h3 class="box-title"><i class="fa fa-fw fa-puzzle-piece"></i>Đăng nhập:</h3>
+                </div>
+                <div class="box-body">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Username" autofocus required>
+                        <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-user"></i>
+                      </div>
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="Password" class="form-control" placeholder="Password" required>
+                      <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-lock"></i>
+                      </div>
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+
+                <div class="form-group row">
+                    <div class="checkbox col-xs-6">
+                      <label>
+                        <input type="checkbox"> Ghi nhớ
+                      </label>
+                    </div>
+                    <div  class="col-xs-6" style="text-align: right ">
+                        <button type="Submit" class="btn btn-login">Sign in</button>
+                    </div>
+                    
+                </div>
+                  
+                </div><!-- /.box-body --> 
+              </div><!-- /.box -->
+            </form>
+             <div class="social-or-login center">
+                <span class="bigger-110">Or Login Using</span>
+            </div>
+            <div class="social-login center">
+                <a class="btn btn-primary">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+
+                <a class="btn btn-info">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <a class="btn btn-danger">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </div>
+            <div class="toolbar clearfix row">
+                <div class="col-xs-6">
+                    <a href="#" data-target="#forgot-box" class="forgot-password-link">
+                        <i class="fa fa-arrow-left"></i>
+                        I forgot my password
+                    </a>
+                </div>
+
+                <div class="col-xs-6" style="text-align: right;">
+                    <a href="#" data-target="#signup-box" class="user-signup-link">
+                        I want to register
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+          </div><!-- /.col-md-5 -->
+<script>
+    $(function () {
+      //popover option
+      $("#a-popover").popover({
+        title: 'Thông tin đăng nhập',
+        content: $('#divContentHTML').html(),
+        placement: 'bottom',
+        html: true
+      });
+    });
+    $('body').on('click', function (e) {
+        $('.a-popover').each(function () {
+          if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+            $(this).popover('hide');
+          }
+        });
+      });
+
+</script>
+
+<script type="text/javascript " src="js/script.js "></script>
+
+<script>
+    angular.module("myapp", []).controller("MainController", function($scope) {
+
+    });
+   $(function () {
+      $('.btn-open-popover').popover();
+    });
+</script>
+                        
+</body>
+
+
+</html>

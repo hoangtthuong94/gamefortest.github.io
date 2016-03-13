@@ -1,16 +1,16 @@
-<div class="modal fadebs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="dangnhap">
-    <div class="modal-dialog modal-sm">
+<div ng-controller="LoginCtrl" class="modal fadebs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="dangnhap">
+    <div class="modal-dialog modal-sm" >
       <form role="form">
         <!-- Modal content-->
             <div class="modal-content">
                   <div class="modal-header">
                     <h3 class="modal-title"><i class="fa fa-fw fa-puzzle-piece"></i>Đăng nhập:</h3>
                   </div>
-
+            
                   <div class="modal-body">
                       <div class="form-group">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Username" autofocus required>
+                      <input type="text" class="form-control" placeholder="Username" required="required" ng-model="email"/>
                         <div class="input-group-addon">
                         <i class="glyphicon glyphicon-user"></i>
                       </div>
@@ -19,7 +19,7 @@
 
                   <div class="form-group">
                     <div class="input-group">
-                      <input type="Password" class="form-control" placeholder="Password" required>
+                      <input type="Password" class="form-control" placeholder="Password" required="required" ng-model="password"/>
                       <div class="input-group-addon">
                         <i class="glyphicon glyphicon-lock"></i>
                       </div>
@@ -29,18 +29,18 @@
                 <div class="form-group row">
                     <div class="checkbox col-xs-6">
                       <label>
-                        <input type="checkbox"> Ghi nhớ
+                        <input type="checkbox"/> Ghi nhớ
                       </label>
                     </div>
                     <div  class="col-xs-6" style="text-align: right ">
-                        <button type="Submit" class="btn btn-login">Sign in</button>
+                        <button type="Submit" class="btn btn-login" ng-click="login()">Sign in</button>
                     </div> 
-                </div
+                </div>
   
                   </div><!-- /.box-body --> 
                    <div class="social-or-login center">
-                <span class="bigger-110">Or Login Using</span>
-            </div>
+                      <span class="bigger-110">Or Login Using</span>
+                  </div>
             <div class="social-login center">
                 <a class="btn btn-primary">
                     <i class="fa fa-facebook-square"></i>
@@ -69,50 +69,9 @@
                     </a>
                 </div>
             </div>
-               
-            </div><!-- /.modal -->
-      </form>
-    </div>
-  </div>
-
-  <!--begin:forgot password-->
-  <div class="modal fadebs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="forgot-box">
-    <div class="modal-dialog modal-sm">
-      <form role="form">
-        <!-- Modal content-->
-            <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title">Bạn quên mật khẩu:</h3>
-                  </div>
-
-                  <div class="modal-body">
-                    <div class="form-group">
-                      <label>Email:</label>
-                      <div class="input-group">
-                        <div class="input-group-addon">
-                          <i class="glyphicon glyphicon-user"></i>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Email" autofocus required>
-                      </div><!-- /.input group -->
-                    </div><!-- /.form group -->
-                  </div>
-                <div class="form-group row">
-                    <div  class="col-xs-6" style="text-align: right ">
-                        <button type="Submit" class="btn btn-login">Gửi</button>
-                    </div> 
-                </div>
-           </div>
-
-            <div class="toolbar clearfix">
-                <div style="text-align: right;">
-                    <a href="#" data-target="#signup-box" class="user-signup-link">
-                        back
-                        <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
             </div>
-               
-            </div><!-- /.modal -->
       </form>
     </div>
   </div>
+
+  

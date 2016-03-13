@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<html ng-app="myapp">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html ng-app="LeHoiViet" xmlns="http://www.w3.org/1999/xhtml" lang="vi-VN" xml:lang="vi-VN">
 
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <title>Lehoiviet</title>
@@ -10,7 +11,6 @@
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <script src="lib/bootstrap/js/jquery-1.11.3.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-	<script language="javascript" src="lib/angular.min.js"></script>
     <link rel="stylesheet" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="lib/bootstrap/css/ionicons.min.css">
@@ -23,52 +23,52 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Noto+Serif:700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
-
-   
 </head>
 
-<body ng-controller="MainController">
+<body ng-controller="MainCtrl as main">
 
 
-<div id="menu" ng-include="'views/public/menu.html'"></div>
-<div ng-include="'views/public/header.html'"></div>
-<div id="login" ng-include="'views/public/login.html'"></div>
-<div id="#"></div>
-<div id="" class="container">
-    <section id="promotion" class="row">
-        <div ng-include="'views/public/promotion.html'"></div>
-    </section>
-    <div id="main" class="row">
+    <div id="menu" ng-include="'views/public/menu.html'"></div>
+    <div ng-include="'views/public/header.html'"></div>
+    <div id="login" ng-include="'views/public/login.html'"></div> 
+    <div id="#"></div>
+    <div id="" class="container">
+        <section id="promotion" class="row" ng-include="'views/public/promotion.html'"></section>
+        <div id="main" class="row">
 
-        <div id="main-left" class="col-md-9">
-            <div ng-include="'views/public/content_home.html'"></div>
-        </div>
+            <div id="main-left" class="col-md-9">
+                <div ng-include="'views/public/content_home.html'"></div>
+            </div>
 
-        <div id="sidebar" class="col-md-3">
-            <div ng-include="'views/public/sidebar.html'"></div>
+            <div id="sidebar" class="col-md-3">
+                <div ng-include="'views/public/sidebar.html'"></div>
+            </div>
         </div>
     </div>
 
-</div>
+    <section id="footer" ng-include="'views/public/footer.html'"></section>
+    <section id="copyright" ng-include="'views/public/copyright.html'"></section>
 
-
-
-<section id="footer" ng-include="'views/public/footer.html'"></section>
-<section id="copyright" ng-include="'views/public/copyright.html'"></section>
-
-<div class="btn-top">
-  <a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></span></a>
-</div>
-
-<script type="text/javascript " src="js/script.js "></script>
-
-<script>
-    angular.module("myapp", []).controller("MainController", function($scope) {
-
-    });
-</script>
-                        
+    <div class="btn-top">
+      <a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+    </div>
 </body>
 
+<footer>
+    <script type="text/javascript" src="js/script.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+    <script src="src/LeHoiViet.js"></script>  
+    <script src="src/app/App.js"></script>  
+    <script src="src/app/controllers/MainController.js"></script>  
+    <script src="src/app/services/LoginService.js"></script>  
+    <script src="src/app/services/EndPointConfigService.js"></script> 
+    <script src="src/login/Login.js"></script>  
+    <script src="src/login/controllers/LoginController.js"></script>
+    <script src="src/festival/Festival.js"></script>  
+    <script src="src/festival/controllers/FestivalController.js"></script>
+    <script src="src/review/Review.js"></script>
+    <script src="src/review/controllers/ReviewController.js"></script>
+</footer>
 
 </html>

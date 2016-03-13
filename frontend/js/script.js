@@ -18,20 +18,8 @@ $(document).ready(function() {
         }
         return t
     }
-    function n() {
-        var n=$(window).width(), r=t(), i=Math.floor(n/r);
-        e.find(".wrapper-portfolio li").each(function() {
-            $(this).css( {
-                width: i+"px"
-            }
-            )
-        }
-        )
-    }
-    function r() {
-        n();
-        e.isotope("reLayout")
-    }
+
+ 
     $(window).scroll(function() {
         if($(window).scrollTop()>80) {
             $(".navbar").removeClass("navbar-transparent")
@@ -44,29 +32,12 @@ $(document).ready(function() {
     if($(window).scrollTop()>80) {
         $(".navbar").removeClass("navbar-transparent")
     }
-    $("#header").parallax();
+    
     $(window).bind("resize", function() {
-        r()
-    }
-    );
-    var i=$(".container-post");
-    i.imagesLoaded(function() {
-        i.masonry()
-    }
-    );
-    $("#map").gmap3( {
-        map: {
-            options: {
-                center: [-7.866315, 110.389574], zoom: 10, scrollwheel: false
-            }
+        
         }
-        , marker: {
-            latLng:[-7.866315, 110.389574], options: {
-                icon: new google.maps.MarkerImage("https://dl.dropboxusercontent.com/u/29545616/Preview/location.png", new google.maps.Size(48, 48, "px", "px"))
-            }
-        }
-    }
-    )
+    );
+ 
 }
 
 )

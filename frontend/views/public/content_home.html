@@ -1,304 +1,62 @@
 <!--begin:article-->
-  <div class="article">
+  <div class="article" ng-controller="FestivalCtrl" data-ng-init="getUpcommingFestival()">
     <div class="row">
     <h2 class="head-title" style="margin-left:0px; margin-right: 0px;">Lễ hội sắp diễn ra</h2>
-        <div class="col-sm-4 col-xs-6">
+        <div class="col-sm-4 col-xs-6" ng-repeat="itemUpcommingFestival in upcommingFestivalData">
             <div class="image-wrapper overlay-fade-in">
                 <a href="#">
                     <img class="img-responsive" src="images/hang-en-ivivu.jpg" alt="hang-en"/>
                     <div class="image-overlay-content">
-                        <h4>Ghi dấu tuổi trẻ rực rỡ với 10 trải nghiệm du lịch thú vị nhất</h4>
-                        <p class="">Mỗi người chỉ trải qua một lần tuổi trẻ, thế nên bạn hãy dùng tuổi trẻ của mình để tận hưởng những trải nghiệm du lịch...</p>
+                        <h4>{{itemUpcommingFestival.title}}</h4>
+                        <p class="">{{itemUpcommingFestival.content}}</p>
                     </div>
                 </a>
             </div>
         </div>      
-
-        <div class="col-sm-4 col-xs-6">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="images/cho-nga-diem-den-khong-the-bo-qua-khi-du-lich-Phnom-Penh-ivivu-3-370x215.jpg" alt="cho-nga-diem-den-khong-the-bo-qua-khi-du-lich-Phnom-Penh"/>
-                    <div class="image-overlay-content">
-                        <h4>CHỢ NGA – ĐIỂM ĐẾN KHÔNG THỂ BỎ QUA KHI DU LỊCH PHNOM PENH</h4>
-                        <p class="">Nằm ở phía Nam của thành phố Phnom Penh, chợ Nga hay Psah Toul Tom Poung là một khu chợ khá đông đúc và nhộn nhịp...</p>
-                    </div>
-                </a>
-            </div>
-        </div>      
-    
-
-        <div class="col-sm-4 col-xs-6">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="images/du-lich-bangkok-ivivu-9-370x215.jpg" alt="du-lich-bangkok"/>
-                    <div class="image-overlay-content">
-                        <h4>10 điều thú vị đang đợi bạn trong chuyến du lịch Bangkok</h4>
-                        <p class="">Vui tươi, náo nhiệt và có quá nhiều thứ để khám phá, du lịch Bangkok luôn có sức hấp dẫn...</p>
-                    </div>
-                </a>
-            </div>
         </div>
-    
-        <div class="col-sm-4 col-xs-6">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="images/du-lich-mot-minh-ivivu-1.jpg" alt="du-lich-mot-minh" />
-                    <div class="image-overlay-content">
-                        <h4>8 điểm đến ở Việt Nam cho người thích đi du lịch một mình</h4>
-                        <p class="">Du lịch một mình đang dần trở thành một xu hướng mới được nhiều bạn trẻ Việt yêu thích...</p>
+    </div>
+<!--end:article-->
+<!-- begin:content -->
+<div id="content" ng-controller="ReviewCtrl"  data-ng-init="getTopReviews()">
+    <div class="row">
+    <h2 class="head-title" style="margin-right: 10px; margin-left: 10px;">Review về lễ hội</h2>
+        <div class="col-md-4 col-sm-4 col-xs-12 zenFadeInRightBig" ng-repeat="itemReview in topReviewsData">
+            <div class="post-container">
+                <div class="post-content">
+                  <div class="content-decribe">
+                    <img src="images/sac-mau-ky-ao-cua-nhung-le-hoi-thang-hai-ivivu-1.jpg" alt="sac-mau-ky-ao-cua-nhung-le-hoi-thang-hai"/>
+                    <div class="heading-title heading-small">
+                        <h2><a href="#">{{itemReview.title}}</a></h2>
                     </div>
-                </a>
-            </div>
-        </div>
+                    <div class="post-meta">
+                        <span>By <a href="#" title="Posts by admin" rel="author">Admin</a></span>
+                        <span>05/02/2016</span>
+                    </div>
+                    <div class="time">
+                      <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                      <span>05/02/2016</span> - <span>10/02/2016</span>
+                    </div>
+                    
+                    <p>Không chỉ có Tết Nguyên đán ở các nước châu Á...</p>
+                  </div>
 
-        <div class="col-sm-4 col-xs-6">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="images/chua-banh-xeo-co-mot-khong-hai-o-vung-tau-ivivu-2.jpg" alt="chua-banh-xeo-co-mot-khong-hai-o-vung-tau"/>
-                    <div class="image-overlay-content">
-                        <h4>Chùa Bánh Xèo có một không hai ở Vũng Tàu</h4>
-                        <p class="">Bánh xèo chay là món ăn mà Ni viện Thiện Hòa (Tân Thành, Bà Rịa – Vũng Tàu) dùng để đãi khách và tên gọi của chùa cũng bắt đầu từ đó.</p>
-                    </div>
-                </a>
-            </div>
-        </div>      
-    
-        <div class="col-sm-4 col-xs-6">
-            <div class="image-wrapper overlay-fade-in">
-                <a href="#">
-                    <img class="img-responsive" src="images/Den-Hue-vao-mua-diu-dang-nhat-trong-nam-ivivu-1.jpg" alt="Den-Hue-vao-mua-diu-dang-nhat-trong-nam"/>
-                    <div class="image-overlay-content">
-                        <h4>Đến du lịch Huế vào mùa dịu dàng nhất trong năm</h4>
-                        <p class="">Sau Tết Âm lịch, thời tiết mát mẻ, cố đô thu hút du khách đến tham quan cung điện.</p>
-                    </div>
-                </a>
+                    <div class="post-atribut">
+                      <div class="row">
+                          <div class="col-md-4 col-sm-4 col-xs-4">
+                              <a href="#"><span><i class="fa fa-heart"></i> 1000</span></a>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-4">
+                              <a href="#"><span><i class="fa fa-comments"></i> 420</span></a>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-4">
+                              <a href="#"><span><i class="fa fa-eye"></i> 2500</span></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
             </div>
         </div>
     </div>
-
-  </div>
-<!--end:article-->
-<!-- begin:content -->
-<div id="content">
-    <div class="row">
-    <h2 class="head-title" style="margin-right: 10px; margin-left: 10px;">Review về lễ hội</h2>
-        <div class="col-md-4 col-sm-4 col-xs-12 zenFadeInRightBig">
-            <div class="post-container">
-                        <div class="post-content">
-                          <div class="content-decribe">
-                            <img src="images/sac-mau-ky-ao-cua-nhung-le-hoi-thang-hai-ivivu-1.jpg" alt="sac-mau-ky-ao-cua-nhung-le-hoi-thang-hai">
-                            <div class="heading-title heading-small">
-                                <h2><a href="#">Sắc màu kỳ ảo của những lễ hội tháng hai</a></h2>
-                            </div>
-                            <div class="post-meta">
-                                <span>By <a href="#" title="Posts by admin" rel="author">Admin</a></span>
-                                <span>05/02/2016</span>
-                            </div>
-                            <div class="time">
-                              <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                              <span>05/02/2016</span> - <span>10/02/2016</span>
-                            </div>
-                            
-                            <p>Không chỉ có Tết Nguyên đán ở các nước châu Á...</p>
-                          </div>
-
-                            <div class="post-atribut">
-                              <div class="row">
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-heart"></i> 1000</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-comments"></i> 420</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-eye"></i> 2500</span></a>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 zenFadeInRightBig">
-            <div class="post-container">
-                        <div class="post-content">
-                          <div class="content-decribe">
-                            <img src="images/Top-25-diem-den-du-lich-hang-dau-the-gioi-ivivu-3-370x215.jpg" alt="Top-25-diem-den-du-lich-hang-dau-the-gioi">
-                            <div class="heading-title heading-small">
-                                <h2><a href="#">Top 25 điểm đến du lịch hàng đầu thế giới</a></h2>
-                            </div>
-                            <div class="post-meta">
-                                <span>By <a href="#" title="Posts by admin" rel="author">Admin</a></span>
-                                <span>29/01/2016</span>
-                            </div>
-                            <div class="time">
-                              <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                              <span>05/02/2016</span> - <span>10/02/2016</span>
-                            </div>
-                            <p>Thu hút khoảng 27,77 triệu lượt du khách quốc tế,  </p>
-                          </div>
-
-                            <div class="post-atribut">
-                              <div class="row">
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-heart"></i> 140</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-comments"></i> 300</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-eye"></i> 2500</span></a>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                    </div>
-            </div>
-        <div class="col-md-4 col-sm-4 col-xs-12 zenFadeInRightBig">
-            <div class="post-container">
-                        <div class="post-content">
-                          <div class="content-decribe">
-                            <img src="images/Thieu-nu-ruoc-phan-ve-cho-hoa-tai-festival-Da-Lat-ivivu-1.jpg" alt="Thieu-nu-ruoc-phan-ve-cho-hoa-tai-festival-Da-Lat">
-                            <div class="heading-title heading-small">
-                                <h2><a href="#">Thiếu nữ rước phấn về cho hoa tại festival Đà Lạt</a></h2>
-                            </div>
-                            <div class="post-meta">
-                                <span>By <a href="#" title="Posts by admin" rel="author">Admin</a></span>
-                                <span>30/12/2015</span>
-                            </div>
-                            <div class="time">
-                              <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                              <span>05/02/2016</span> - <span>10/02/2016</span>
-                            </div>
-                            <p>Nghệ nhân Việt Nam và các nước Hàn Quốc</p>
-                          </div>
-
-                            <div class="post-atribut">
-                              <div class="row">
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-heart"></i> 200</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-comments"></i> 30</span></a>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-xs-4">
-                                      <a href="#"><span><i class="fa fa-eye"></i> 1500</span></a>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                    </div>  
-            </div>
-
-            <div class="col-md-4 col-sm-4 col-xs-12 zenFadeInRightBig">
-                <div class="post-container">
-                          <div class="post-content">
-                            <div class="content-decribe">
-                              <img src="images/sac-mau-ky-ao-cua-nhung-le-hoi-thang-hai-ivivu-1.jpg" alt="sac-mau-ky-ao-cua-nhung-le-hoi-thang-hai">
-                              <div class="heading-title heading-small">
-                                  <h2><a href="#">Sắc màu kỳ ảo của những lễ hội tháng hai</a></h2>
-                              </div>
-                              <div class="post-meta">
-                                  <span>By <a href="#" title="Posts by admin" rel="author">Admin</a></span>
-                                  <span>05/02/2016</span>
-                              </div>
-                              <div class="time">
-                                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                                <span>05/02/2016</span> - <span>10/02/2016</span>
-                            </div>
-                              <p>Không chỉ có Tết Nguyên đán ở các nước châu Á...</p>
-                            </div>
-
-                              <div class="post-atribut">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-4">
-                                        <a href="#"><span><i class="fa fa-heart"></i> 1000</span></a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4">
-                                        <a href="#"><span><i class="fa fa-comments"></i> 420</span></a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4">
-                                        <a href="#"><span><i class="fa fa-eye"></i> 2500</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-4 col-xs-12 zenFadeInRightBig">
-                <div class="post-container">
-                            <div class="post-content">
-                              <div class="content-decribe">
-                                <img src="images/Top-25-diem-den-du-lich-hang-dau-the-gioi-ivivu-3-370x215.jpg" alt="Top-25-diem-den-du-lich-hang-dau-the-gioi">
-                                <div class="heading-title heading-small">
-                                    <h2><a href="#">Top 25 điểm đến du lịch hàng đầu thế giới</a></h2>
-                                </div>
-                                <div class="post-meta">
-                                    <span>By <a href="#" title="Posts by admin" rel="author">Admin</a></span>
-                                    <span>29/01/2016</span>
-                                </div>
-                                <div class="time">
-                                  <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                                  <span>05/02/2016</span> - <span>10/02/2016</span>
-                                </div>
-                                <p>Thu hút khoảng 27,77 triệu lượt du khách quốc tế,  </p>
-                              </div>
-
-                                <div class="post-atribut">
-                                  <div class="row">
-                                      <div class="col-md-4 col-sm-4 col-xs-4">
-                                          <a href="#"><span><i class="fa fa-heart"></i> 140</span></a>
-                                      </div>
-                                      <div class="col-md-4 col-sm-4 col-xs-4">
-                                          <a href="#"><span><i class="fa fa-comments"></i> 300</span></a>
-                                      </div>
-                                      <div class="col-md-4 col-sm-4 col-xs-4">
-                                          <a href="#"><span><i class="fa fa-eye"></i> 2500</span></a>
-                                      </div>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="col-md-4 col-sm-4 col-xs-12 zenFadeInRightBig">
-                    <div class="post-container">
-                                <div class="post-content">
-                                  <div class="content-decribe">
-                                    <img src="images/Thieu-nu-ruoc-phan-ve-cho-hoa-tai-festival-Da-Lat-ivivu-1.jpg" alt="Thieu-nu-ruoc-phan-ve-cho-hoa-tai-festival-Da-Lat">
-                                    <div class="heading-title heading-small">
-                                        <h2><a href="#">Thiếu nữ rước phấn về cho hoa tại festival Đà Lạt</a></h2>
-                                    </div>
-                                    <div class="post-meta">
-                                        <span>By <a href="#" title="Posts by admin" rel="author">Admin</a></span>
-                                        <span>30/12/2015</span>
-                                    </div>
-                                    <div class="time">
-                                      <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                                      <span>05/02/2016</span> - <span>10/02/2016</span>
-                                    </div>
-                                    <p>Nghệ nhân Việt Nam và các nước Hàn Quốc</p>
-                                  </div>
-
-                                    <div class="post-atribut">
-                                      <div class="row">
-                                          <div class="col-md-4 col-sm-4 col-xs-4">
-                                              <a href="#"><span><i class="fa fa-heart"></i> 200</span></a>
-                                          </div>
-                                          <div class="col-md-4 col-sm-4 col-xs-4">
-                                              <a href="#"><span><i class="fa fa-comments"></i> 30</span></a>
-                                          </div>
-                                          <div class="col-md-4 col-sm-4 col-xs-4">
-                                              <a href="#"><span><i class="fa fa-eye"></i> 1500</span></a>
-                                          </div>
-                                      </div>
-                                  </div>
-                                </div>
-                            </div>  
-                    </div>          
-        
-      </div>
+</div>
 <!--end:content-->
 <div class="clearfix "></div>
-
-</div>
