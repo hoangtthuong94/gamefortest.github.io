@@ -1,6 +1,6 @@
 <div ng-controller="LoginCtrl" class="modal fadebs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="dangnhap">
     <div class="modal-dialog modal-sm" >
-      <form role="form">
+      <form role="form" name="userLogin">
         <!-- Modal content-->
             <div class="modal-content">
                   <div class="modal-header">
@@ -10,7 +10,7 @@
                   <div class="modal-body">
                       <div class="form-group">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Username" required="required" ng-model="email"/>
+                      <input type="text" class="form-control" placeholder="Email" required="required" ng-model="email"/>
                         <div class="input-group-addon">
                         <i class="glyphicon glyphicon-user"></i>
                       </div>
@@ -39,7 +39,7 @@
   
                   </div><!-- /.box-body --> 
                    <div class="social-or-login center">
-                      <span class="bigger-110">Or Login Using</span>
+                      <span class="bigger-110">Hoặc đăng nhập bằng tài khoản khác</span>
                   </div>
             <div class="social-login center">
                 <a class="btn btn-primary">
