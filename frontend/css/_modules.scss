@@ -407,11 +407,11 @@
     }
   }
 
-    .forgot-password-link,
-  .user-signup-link {
+  .forgot-password-link,
+  .user-signup-link, .user-back-link{
     color: #fff;
   }
-  .btn-login{
+  .btn-login, .btn-forgot{
     background-color: #228aa9;
       color: #fff;
   }
@@ -420,8 +420,8 @@
   }
   .toolbar{
       background-color: #228aa9;
-      padding: 10px 2px 10px 2px;
-      margin: 10px -15px -15px -15px;
+      padding: 10px 5px 10px 5px;
+      margin-top: 10px;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;;
     }
