@@ -7,6 +7,11 @@
   border-radius: 0px;
 }
 
+#menu-container .navbar-collapse {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 #menu-container .navbar-default {
   background-color: #333;
   border: none;
@@ -91,10 +96,6 @@ ul, li {
 
 #post-decription .main-info .feature-gallery ul, #post-decription .main-info .feature-gallery li {
   padding: 0px;
-  margin: 0px;
-}
-
-#post-decription .main-info .feature-gallery .row {
   margin: 0px;
 }
 
@@ -326,10 +327,6 @@ ul, li {
   margin: 10px 0px 10px 0px;
 }
 
-#post-common .micro-whiterow .microsite-box-album .row {
-  margin: 0px;
-}
-
 #post-common .micro-whiterow .microsite-box-album .col-sm-3 {
   padding: 0px;
 }
@@ -350,7 +347,6 @@ ul, li {
 }
 
 #post-common .micro-greyrow .row {
-  margin: 0px;
   background-color: #333;
 }
 

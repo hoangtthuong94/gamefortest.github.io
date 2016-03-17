@@ -85,10 +85,6 @@
   margin: 0px;
 }
 
-#post-decription .main-info .feature-gallery .row {
-  margin: 0px;
-}
-
 #post-decription .main-info .feature-gallery .featured-album-item img {
   width: 100%;
   border: 2px solid #fff;
@@ -221,10 +217,6 @@
   margin-top: 10px;
 }
 
-#post-common .microsite-box #resreviews #review-list .micro-home-recent-review .row {
-  margin: 0px;
-}
-
 #post-common .microsite-box #resreviews #review-list .micro-home-recent-review .col-sm-2, #post-common .microsite-box #resreviews #review-list .micro-home-recent-review .col-sm-10, #post-common .microsite-box #resreviews #review-list .micro-home-recent-review .col-xs-2, #post-common .microsite-box #resreviews #review-list .micro-home-recent-review .col-xs-10 {
   padding: 0px;
 }
@@ -355,10 +347,6 @@
   margin: 10px 0px 10px 0px;
 }
 
-#post-common .micro-whiterow .microsite-box-album .row {
-  margin: 0px;
-}
-
 #post-common .micro-whiterow .microsite-box-album .col-sm-3 {
   padding: 0px;
 }
@@ -379,7 +367,6 @@
 }
 
 #post-common .micro-greyrow .row {
-  margin: 0px;
   background-color: #333;
 }
 

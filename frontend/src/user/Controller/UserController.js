@@ -4,7 +4,8 @@ angular.module("LeHoiViet.User", [])
 			var MODEL = "users/singup";
 			$http({
 				method: "POST",
-				url: EndPointConfigService.getUrl(MODEL)
+				url: EndPointConfigService.getUrl(MODEL),
+				data: {}
 			}).then(function successCallback)
 		};
 	});
