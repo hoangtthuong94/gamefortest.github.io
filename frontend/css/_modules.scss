@@ -422,7 +422,15 @@
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;;
     }
-
+  #register{
+    .form-group{
+      padding: 5px;
+    }
+    .modal-body{
+      max-height: 480px;
+      overflow-y: auto;
+    }
+  }
 }/*#login*/
     
 

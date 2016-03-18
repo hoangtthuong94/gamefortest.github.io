@@ -51,7 +51,7 @@
                     <i class="fa fa-google-plus"></i>
                 </a>
             </div>
-            <div class="toolbar clearfix row">
+            <div class="modal-footer toolbar clearfix row">
                 <div class="col-xs-6" style="text-align: left;">
                     <a id="forgot" href="#" data-toggle="modal" data-target="#forgot-password" class="button user-signup-link">
                         <i class="fa fa-arrow-left"></i>
@@ -116,75 +116,80 @@
           <h3 class="modal-title" id="upload-avatar-title"><i class="fa fa-fw fa-smile-o"></i>Đăng kí tài khoản</h3>
         </div>
         <div class="modal-body row">
-             <div class="form-group col-xs-6">
-                    <label>Email</label>
+            <div class="form-group col-xs-12 col-sm-6">
+                    <label>Tên</label>
                     <div class="input-group">
                       <div class="input-group-addon">
                         <i class="glyphicon glyphicon-user"></i>
                       </div>
-                      <input ng-model="email" type="text" class="form-control" placeholder="Enter username" autofocus required>
-                    </div><!-- /.input group -->
-              </div><!-- /.form group -->
-                  <div class="form-group col-xs-6">
-                    <label>Mật khẩu</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="glyphicon glyphicon-lock"></i>
-                      </div>
-                      <input ng-model="password" type="Password" class="form-control" placeholder="Enter password" required>
-                    </div><!-- /.input group -->
-                  </div><!-- /.form group -->
-                  <div class="form-group col-xs-6">
-                    <label>Nhập lại mật khẩu:</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="glyphicon glyphicon-lock"></i>
-                      </div>
-                      <input type="Password" class="form-control" placeholder="Enter repassword" required>
-                    </div><!-- /.input group -->
-                  </div><!-- /.form group -->
-                  <div class="form-group col-xs-6">
-                    <label>Tên</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="glyphicon glyphicon-envelope"></i>
-                      </div>
                       <input ng-model="firstname" type="text" class="form-control" required>
                     </div><!-- /.input group -->
-                  </div><!-- /.form group -->
-                  <div class="form-group col-xs-6">
-                    <label>Họ</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="glyphicon glyphicon-envelope"></i>
-                      </div>
-                      <input ng-model="lastname" type="text" class="form-control" required>
-                    </div><!-- /.input group -->
-                  </div><!-- /.form group -->
-                  <div class="form-group">
-                    <label>Giới tính</label>
-                    <div class="input-group">
-                      <input ng-model="gender" type="radio" name="gender" value="0"/>Nam
-                      <input ng-model="gender" type="radio" name="gender" value="1"/>Nữ
-                    </div><!-- /.input group -->
-                  </div><!-- /.form group -->
+            </div><!-- /.form group -->
+            <div class="form-group col-xs-12 col-sm-6">
+              <label>Họ</label>
+              <div class="input-group">
+                <div class="input-group-addon">
+                  <i class="glyphicon glyphicon-user"></i>
+                </div>
+                <input ng-model="lastname" type="text" class="form-control" required>
+              </div><!-- /.input group -->
+            </div><!-- /.form group -->
+             <div class="form-group col-xs-12 col-sm-6">
+                <label>Mật khẩu</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </div>
+                  <input ng-model="password" type="Password" class="form-control" placeholder="Enter password" required>
+                </div><!-- /.input group -->
+              </div><!-- /.form group -->
+              <div class="form-group col-xs-12 col-sm-6">
+                <label>Nhập lại mật khẩu:</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </div>
+                  <input type="Password" class="form-control" placeholder="Enter repassword" required>
+                </div><!-- /.input group -->
+              </div><!-- /.form group -->
+              <div class="form-group col-xs-12 col-sm-6">
+                  <label>Email</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="glyphicon glyphicon-envelope"></i>
+                    </div>
+                    <input ng-model="email" type="text" class="form-control" placeholder="Enter username" autofocus required>
+                  </div><!-- /.input group -->
+              </div><!-- /.form group -->   
+
+              <div class="form-group ">
+                <label>Giới tính</label>
+                <div class="input-group row">
+                  <label class="radio-inline">
+                    <input ng-model="gender" ng-value="1" type="radio" name="gender">Nam
+                  </label>
+                  <label class="radio-inline">
+                    <input ng-model="gender" ng-value="2" type="radio" name="gender">Nữ
+                  </label>
+                  </div>
+              </div><!-- /.form group -->
                   <div class="checkbox form-group">
                       <label>
                         <input type="checkbox"> Tôi đồng ý với những <a href="#">điều khoản</a> và <a href="#">nội quy</a> của diễn đàn
                       </label>
                     </div> 
                 <div style="text-align: right;">
-                  <button ng-click="singup()" type="Submit" class="btn btn-forgot">Gửi</button>
+                  <button ng-click="singup()" type="Submit" class="btn btn-forgot">Đăng kí</button>
                 </div>
         </div>
-        <div class="toolbar clearfix">
+        <div class="modal-footer toolbar clearfix">
                 <div style="text-align: center;">
                     <a id="loginback" href="#" data-toggle="modal" data-target="#dangnhap" class="user-back-link">
                         Quay lại đăng nhập
                         <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
-            </div>
+        </div>
       </div><!-- /.modal-content -->
     </form>
   </div><!-- /.modal-dialog -->

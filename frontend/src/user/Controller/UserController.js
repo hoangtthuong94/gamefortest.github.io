@@ -12,7 +12,7 @@ angular.module("LeHoiViet.User", [])
 			$http({
 				method: "POST",
 				url: EndPointConfigService.getUrl(MODEL),
-				data: {email: user.email},
+				data: $.param(user),
 				headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
 			}).then(function successCallback(response){
 				var data = response.data;

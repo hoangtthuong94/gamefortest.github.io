@@ -1,0 +1,57 @@
+#mainpost {
+  color: #333;
+  /*end:postcontent*/
+}
+
+#mainpost #postcontent {
+  background-color: #fff;
+  padding: 25px;
+  /*end:feedback-form*/
+}
+
+#mainpost #postcontent .static-header {
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 0 1px 1px #fff;
+}
+
+#mainpost #postcontent .feedback-form .infomation-box span {
+  color: #c00;
+  font-weight: 700;
+}
+
+#mainpost #postcontent .feedback-form .infomation-box .infomation-name {
+  color: #c00;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+#mainpost #postcontent .feedback-form .infomation-box .infomation-content {
+  margin-bottom: 5px;
+}
+
+#mainpost #postcontent .feedback-form .infomation-box .box-info-normal {
+  padding: 5px 0;
+  width: 100%;
+}
+
+#mainpost #postcontent .feedback-form .infomation-box .box-info-normal .details input {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 10px 6px;
+}
+
+#mainpost #postcontent .feedback-form .infomation-box .box-info-normal .details select {
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+#mainpost #postcontent .create-festival {
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+}

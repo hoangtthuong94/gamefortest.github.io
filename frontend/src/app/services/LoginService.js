@@ -3,16 +3,21 @@ angular.module('LeHoiViet.Common')
 		function($http, EndPointConfigService, CURRENT_BACKEND, $location){
 			var service = this, 
 			MODEL = 'users/login';
+			
 
 			service.saveUserAndProfile = function(profile, token){
 
 			};
 
 			service.login = function(email, password, callback){
+				var userLogin = {};
+				userLogin.email = email;
+				userLogin.password = password;
 				$http({
 				  method: "POST",
 				  url: EndPointConfigService.getUrl(MODEL),
-				  data: {email: email, password: password}
+				  data: $.param(userLogin),
+				  headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
 				}).then(function successCallback(response) {
 					callback(response);
 				  }, function errorCallback(response) {

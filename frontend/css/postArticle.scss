@@ -1,0 +1,55 @@
+#mainpost{
+	color: #333;
+	#postcontent{
+		background-color: #fff;
+		padding: 25px;
+		.static-header{
+			font-size: 22px;
+			font-weight: 700;
+			text-shadow: 0 1px 1px #fff;
+		}
+		.feedback-form{
+			
+			.infomation-box{
+				span{
+					color: #c00;
+					font-weight: 700;
+				}
+				.infomation-name{
+					color: #c00;
+					border-bottom: 1px solid #ddd;
+					font-size: 16px;
+					font-weight: 700;
+					margin: 15px 0;
+				}
+				.infomation-content {
+					margin-bottom: 5px;
+				}
+				.box-info-normal{
+					padding: 5px 0;
+					width: 100%;
+					.details{
+
+						input{
+							background: #f9f9f9 none repeat scroll 0 0;
+							border-radius: 2px;
+							border: 1px solid #ddd;
+							padding: 10px 6px;
+						}
+						select{
+							border-radius: 2px;
+							border: 1px solid #ddd;
+							padding: 5px;
+						}
+					}
+				}
+			}
+		}/*end:feedback-form*/
+		.create-festival{
+			padding: 10px;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+	}/*end:postcontent*/
+	
+}

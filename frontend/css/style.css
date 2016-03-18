@@ -863,5 +863,14 @@ th {
   border-bottom-right-radius: 5px;
 }
 
+#login #register .form-group {
+  padding: 5px;
+}
+
+#login #register .modal-body {
+  max-height: 480px;
+  overflow-y: auto;
+}
+
 /*#login*/
 /**/
