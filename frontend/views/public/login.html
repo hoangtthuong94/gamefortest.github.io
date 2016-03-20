@@ -7,8 +7,9 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 class="modal-title"><i class="fa fa-fw fa-puzzle-piece"></i>Đăng nhập:</h3>
                   </div>
-            
+              
                   <div class="modal-body">
+                    <span style="color: red;" ng-show="getLoginState()==-1">Đăng nhập không thành công!</span>
                     <div class="form-group">
                       <div class="input-group">
                         <input type="text" class="form-control" placeholder="Email" required="required" ng-model="email"/>

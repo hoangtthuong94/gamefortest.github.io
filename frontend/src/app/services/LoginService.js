@@ -16,8 +16,7 @@ angular.module('LeHoiViet.Common')
 				$http({
 				  method: "POST",
 				  url: EndPointConfigService.getUrl(MODEL),
-				  data: $.param(userLogin),
-				  headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+				  data: userLogin
 				}).then(function successCallback(response) {
 					callback(response);
 				  }, function errorCallback(response) {
