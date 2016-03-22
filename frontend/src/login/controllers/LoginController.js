@@ -15,7 +15,7 @@ angular.module('LeHoiViet.Login', [])
 						 $rootScope.userProfile ={};
 						 $rootScope.userProfile.firstName = response.data.firstName;
 						 $rootScope.userProfile.lastName = response.data.lastName;
-						 $rootScope.userProfile.avatar = "http://lehoiviet.herokuapp.com/" + response.data.avatar;
+						 $rootScope.userProfile.avatar = "http://lehoiviet.herokuapp.com" + response.data.avatar;
 						 $rootScope.userProfile.gender = response.data.gender;
 					}
 				});

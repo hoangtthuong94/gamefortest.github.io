@@ -425,11 +425,15 @@
   #register{
     .form-group{
       padding: 5px;
+      margin-bottom: 0px;
     }
     .modal-body{
-      max-height: 480px;
+      max-height: 450px;
       overflow-y: auto;
     }
+  }
+  .text-error{
+    color: red;
   }
 }/*#login*/
     

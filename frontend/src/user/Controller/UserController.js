@@ -1,12 +1,12 @@
 angular.module("LeHoiViet.User", [])
 	.controller("UserCtrl", function($scope, $http, EndPointConfigService){
 		$scope.singup = function(){
-			var MODEL = "users/singup";
+			var MODEL = "users/signup";
 			var user = {};
 			user.email = $scope.email;
 			user.password = $scope.password;
-			user.firstname = $scope.firstname;
-			user.lastname = $scope.lastname;
+			user.firstName = $scope.firstname;
+			user.lastName = $scope.lastname;
 			user.gender = $scope.gender;
 
 			$http({

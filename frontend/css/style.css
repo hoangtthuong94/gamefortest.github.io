@@ -865,11 +865,16 @@ th {
 
 #login #register .form-group {
   padding: 5px;
+  margin-bottom: 0px;
 }
 
 #login #register .modal-body {
-  max-height: 480px;
+  max-height: 450px;
   overflow-y: auto;
+}
+
+#login .text-error {
+  color: red;
 }
 
 /*#login*/
