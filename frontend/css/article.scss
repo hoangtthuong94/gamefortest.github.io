@@ -1,0 +1,417 @@
+@import "var";
+#menu-container{
+    margin: 60px 15px 10px 15px;
+    .navbar {
+        border-radius: 0px;
+    }
+
+    .navbar-default{
+        background-color: #333;
+        border: none;
+        .navbar-brand, .navbar-nav > li > a {
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+    .hoatdong{
+        color: #3c8dbc !important;
+    }
+}
+#post-decription{
+    .main-image{
+        img{
+            width: 100%;
+            height: 343px;
+        }
+    }
+    .main-info{
+        .brleft{
+            border-left: 1px solid rgba(0,0,0,0.05);
+        }
+        .padd-top-bottom{
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+        .padd-top{
+            padding-top: 7px;
+        }
+        .res-common-info{
+            padding-left: 15px;
+            padding-right: 15px;
+            ul,li{
+                display: inline;
+            }
+            .main-info-title{
+                h1{
+                    font-size: 25px;
+                    color: $primary-color-content;
+                }
+            }
+            .disableSection
+            {
+                span{
+                    margin-right: 5px;
+                }
+            }
+            .res-summary-point{
+                text-align: center;
+                border-top: 1px solid rgba(0,0,0,0.05);
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+                .sumary-point{
+                    font-size: 20px;
+                    color: #3c8dbc;
+                    font-style: bold;
+                }
+                .sumary-common{
+                    font-size: 18px;
+                    font-style: bold;
+                    color: $primary-color-content; 
+                }
+            }
+        }
+        .feature-gallery{
+            ul,li{
+                padding:0px;
+                margin: 0px;
+            }
+            .featured-album-item{
+                img{
+                    width: 100%;
+                    border: 2px solid #fff;
+                    border-radius: 5px;
+                }
+            }
+             bottom:0px;
+             padding-top:10px
+        }
+    }
+
+}
+
+#post-common{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    .info-lehoi{
+        margin: 30px 0px 30px 0px;
+        ul,li{
+            padding: 0px;
+            list-style: none;
+        }
+        li{
+            background: rgba(0, 0, 0, 0) url('http://static.foody.vn/style/images/icons/special-list-icon.png') no-repeat scroll 0 2px;
+            line-height: 1.7em;
+            padding-left: 20px;
+        }
+
+    }
+    .microsite-box-heading{
+        cursor: point;
+        font-size: 20px;
+    }
+
+     #micro-button-bar{
+        margin-bottom: 30px;
+        ul, li{
+                padding:0px;
+                margin: 0px;
+                list-style: none;
+                display: inline;
+            }
+        .res-common-ratting{
+            background-color: #fff;
+            padding: 20px;
+            .ratting-action{
+                li{
+                    background-color: #f4f4f4;
+                }
+                 span{
+                    margin-right: 5px;
+                    margin-left: 10px
+                }
+                a{
+                    color: #6b6e80;
+                    border: 1px solid #fff;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                a:hover{
+                    text-decoration: none;
+                    color: #5bc0de;
+                    background-color: #eee;
+                }
+                .content-center{
+                    text-align: center;
+                }
+            }   
+        }
+    }
+
+    .microsite-sumary-new{
+        .microsite-box-rating-new{
+            background-color: $primary-article;
+            border: 1px solid rgba(0,0,0,0.05);
+            padding: 10px;
+            margin-top: 10px;
+            a:hover{
+                text-decoration: none;
+            }
+            .ratings-boxes{
+                text-align: center;
+                .ratings-numbers{
+                    span{
+                        color: $primary-body-color;
+                        display: block;
+                        b{
+                            font-size: 22px;
+                        }
+                    }
+                }
+                .ratings-boxes-points{
+                    padding-top: 10px;
+                    b{
+                        font-size: 22px;
+                        color: #03ae03;
+                    }
+                }
+            }
+        }
+    }
+
+    .microsite-box{
+         #resreviews{
+                #micro-review-filter{
+                    background-color: #cce1f3;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    .btn, .dropdown-menu{
+                        font-size: 12px;
+                    }
+                }
+
+            #review-list {
+                ul,li{
+                    padding: 0px;
+                    margin: 0px;
+                    list-style: none;
+                }
+                
+                margin-top: 20px;
+                .micro-home-recent-review{
+                    .col-sm-2, .col-sm-10, .col-xs-2, .col-xs-10{
+                        padding: 0px;
+                    }
+
+                    margin-top: 10px;
+                    .leftimage{
+                        padding-left: auto;
+                        padding-right: auto;
+                        text-align: center;
+                        .microsite-review-new-avatar{
+                            img{
+                                border-radius: 30px;
+                            }
+                        }
+                    }
+
+                    .rightdesc{
+                        margin-top: 20px;
+                        border-bottom: 1px solid #ddd;
+                        .user{
+                                height: 40px;
+                                a{
+                                    color: #333;
+                                    font-weight: 700;
+                                    text-transform: capitalize;
+                                }
+                            }
+                        .photos{
+                            padding-bottom: 10px;
+                            
+                        }
+                        img{
+                            width: 100%;
+                            border: 1px solid #fff;
+                            border-radius: 3px;
+                        }
+                        .picturecounts{
+                            background-color: #ddd;
+                            padding: 5px 10px;
+                            a{
+                                color: #333;
+                            }
+                            a:hover{
+                                text-decoration: underline; 
+                            }
+                        }
+
+                        .share{
+                            margin-top: 10px;
+                            a{
+                                color: #aaa;
+                                background-color: #fff;
+                                border: 1px solid #f0f0f0;
+                                border-radius: 3px;
+                                padding: 4px 10px;
+                                margin-right: 5px;
+                            }
+                            a:hover{
+                                color: #333;
+                                background-color: #ddd;
+                            }
+                        }
+
+                        .review-reply{
+                           
+                            .review-all-comment{
+                                margin-top: 5px;
+                                margin-bottom: 5px;
+                                a:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            .review-reply-item{
+                                padding-bottom: 5px;
+                                padding-top: 5px;
+                                background: #f0f0f0 none repeat scroll 0 0;
+                                border-bottom: 1px solid #fff;
+                                .col-xs-11{
+                                    padding-left: 0px;
+                                }
+                                .review-reply-item-avatar{
+                                    padding-top: 5px;
+                                    text-align: center;
+                                    img{
+                                        width: 40px;
+                                        border-radius: 40px;
+                                    }
+                                }
+                                .review-reply-item-content{
+                                    .user-link{
+                                        padding-right: 5px;
+                                    }
+                                    a{
+                                        color: #000;
+                                        text-transform: capitalize;
+                                    }
+                                    a:hover{
+                                        text-decoration: underline;
+                                    }
+                                    .address{
+                                        font-size: 11px;
+                                        padding-right: 5px;
+                                    }
+                                    .userlike, .glyphicon{
+                                        color: #2fb8da;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }/*#microsite-box*/
+     .micro-whiterow{
+        margin: 20px 0px 20px 0px;
+
+        .microsite-box-album{
+            margin: 10px 0px 10px 0px;
+  
+            .col-sm-3{
+                padding: 0px;
+            }
+            
+            .micro-home-album{
+                img{
+                    width: 100%;
+                    border-radius: 3px;
+                }
+                border: 3px solid #f4f4f4;
+                a{
+                    padding-top: 10px;
+                    color: #333;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .micro-greyrow{
+        .row{
+            background-color: #333;
+        }
+        .col-sm-9, .col-sm-3{
+            padding: 0px;
+        }
+        a{
+            color: $primary-article;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .microsite-box-info{
+            img{
+                width: 100%;
+            }
+            margin-top: 10px;
+            .microsite-map-add{
+            padding-top: 10px;
+            .col-xs-6{
+                text-align: center;
+                padding: 0px;
+                }
+            }
+            .map-overdetail{
+                color: #bbb;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                line-height: 1.5em;
+                font-size: 11px;
+                .map-font{
+                    color: $primary-article;
+                    font-size: 12px;
+                }
+            }
+        }
+        
+    }
+}/*post-common*/
+
+#top-member{
+    font-size: 11px;
+    background-color: #fff;
+    margin-top: 20px;
+    padding-top: 20px;
+    p{
+        color: red;
+        font-size: 18px;
+        margin-left: 30px;
+    }
+    ul,li{
+        list-style: none;
+        text-align: center;
+        padding: 0px;
+    }
+    ul{
+        padding: 20px;
+    }
+    li{
+        height: 90px;
+        overflow: hidden;
+        padding-top: 5px;
+    }
+    img{
+        width: 65px;
+        border-radius: 65px;
+    }
+    a{
+        color: #333;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #333;
+    }
+    .col-md-1{
+        padding: 0px;
+    }
+}
