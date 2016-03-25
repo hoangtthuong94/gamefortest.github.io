@@ -1,0 +1,46 @@
+#menuPost .navbar-default {
+  background-color: #fff;
+  color: #5bc0de;
+}
+
+#menuPost .navbar-default .navbar-brand {
+  color: #5bc0de;
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 20px;
+}
+
+#menuPost .navbar-default .navbar-brand span {
+  font-weight: 800;
+}
+
+#menuPost .navbar-default .navbar-nav li a {
+  color: #898ba2;
+  font-size: 16px;
+  text-shadow: none;
+  padding: 20px;
+}
+
+#menuPost .navbar-default .navbar-nav li a:hover {
+  color: #242636;
+}
+
+#menuPost .navbar-default .navbar-nav .active a, #menuPost .navbar-default .navbar-nav .active a:hover, #menuPost .navbar-default .navbar-nav .active a:focus {
+  color: #5bc0de;
+  font-weight: 800;
+  background-color: transparent;
+}
+
+#menuPost .navbar-default .navbar-nav .menu-search {
+  padding: 15px;
+}
+
+#menuPost a {
+  color: #5bc0de;
+}
+
+#menuPost a:hover {
+  color: #269abc;
+}

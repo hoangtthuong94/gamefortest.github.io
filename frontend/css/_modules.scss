@@ -120,7 +120,7 @@
   }
 }
 
-.zenFadeInRightBig{
+/* .zenFadeInRightBig{
     -webkit-animation:zenFadeInRightBig 2s;
     animation:zenFadeInRightBig 2s;
     
@@ -132,7 +132,7 @@
 @keyframes zenFadeInRightBig{
     0%{opacity:0;transform:translateX(200px);}
     100%{opacity:1;transform:translateX(0);}}
-
+ */
 .post-container::after,
 .post-container::before {
     content: "";
