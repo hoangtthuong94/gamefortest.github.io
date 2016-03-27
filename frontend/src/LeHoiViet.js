@@ -7,7 +7,8 @@ var myModule = angular.module('LeHoiViet',
         'LeHoiViet.Login',
         'LeHoiViet.Festival',
         'LeHoiViet.Review',
-        'LeHoiViet.User'
+        'LeHoiViet.User',
+        'LeHoiViet.PostArticle'
     ]);
 
 myModule.config(function($routeProvider) {

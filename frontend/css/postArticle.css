@@ -38,10 +38,13 @@
   width: 100%;
 }
 
-#mainpost #postcontent .feedback-form .infomation-box .box-info-normal .details input {
+#mainpost #postcontent .feedback-form .infomation-box .box-info-normal .details input, #mainpost #postcontent .feedback-form .infomation-box .box-info-normal .details textarea {
   background: #f9f9f9 none repeat scroll 0 0;
   border-radius: 2px;
   border: 1px solid #ddd;
+}
+
+#mainpost #postcontent .feedback-form .infomation-box .box-info-normal .details input {
   padding: 10px 6px;
 }
 

@@ -36,4 +36,4 @@ var app = angular.module("LeHoiViet.User", [])
             })
         }
     }
-})
+});

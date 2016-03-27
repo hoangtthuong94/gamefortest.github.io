@@ -21,6 +21,11 @@
   color: #3c8dbc !important;
 }
 
+#post-decription {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 #post-decription .main-image img {
   width: 100%;
   height: 343px;
