@@ -1,4 +1,4 @@
-angular.module("LeHoiViet.Festival", ["LeHoiViet.Common"]);
+angular.module("LeHoiViet.Festival", ["LeHoiViet.Common"])
 	.controller("FestivalCtrl", function($scope, $http, EndPointConfigService){
 
 		$scope.getUpcommingFestival = function(){
@@ -29,15 +29,27 @@ angular.module("LeHoiViet.Festival", ["LeHoiViet.Common"]);
 			content.website = $scope.website;
 			content.emailAddress = $scope.emailAddress;
 			content.phoneNumber = $scope.phoneNumber;
-			content.typeEvent = $scope.typeEvent;
+			content.typeEvent = "Ẩm thực";
 			content.detailsAddress = "Hồ Chí Minh";
 			content.nearAddress = $scope.nearAddress;
-			content.mainAdress = $scope.mainAdress;
+			content.mainAdress = "Hồ chí minh";
 			content.priceTicket = $scope.priceTicket;
+			content._id="56eae115025a27db12b53f96";
+			$http({
+				method: "POST",
+				url: EndPointConfigService.getUrl(MODEL),
+				data: content
+			}).then(function successCallback(response){
+				var data = response.data;
+				if(data.success == true){
+					
+				};
+			},function errorCallback(response){
+				
+			});
 
-			$http({})
+		};
 
-		};		
 	});
 
 

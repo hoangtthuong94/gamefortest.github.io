@@ -15,6 +15,7 @@ angular.module('LeHoiViet.Common')
 				userLogin.password = password;
 				$http({
 				  method: "POST",
+				  cache: true,
 				  url: EndPointConfigService.getUrl(MODEL),
 				  data: userLogin
 				}).then(function successCallback(response) {
