@@ -34,10 +34,10 @@ angular.module("LeHoiViet.Festival", ["LeHoiViet.Common"])
 			content.nearAddress = $scope.nearAddress;
 			content.mainAdress = "Hồ chí minh";
 			content.priceTicket = $scope.priceTicket;
-			content._id="56eae115025a27db12b53f96";
 			$http({
 				method: "POST",
 				url: EndPointConfigService.getUrl(MODEL),
+				withCredentials : true,
 				data: content
 			}).then(function successCallback(response){
 				var data = response.data;

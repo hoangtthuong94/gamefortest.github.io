@@ -17,9 +17,11 @@ angular.module('LeHoiViet.Common')
 				  method: "POST",
 				  cache: true,
 				  url: EndPointConfigService.getUrl(MODEL),
+				 withCredential : true,
 				  data: userLogin
 				}).then(function successCallback(response) {
 					callback(response);
+					
 				  }, function errorCallback(response) {
 				  	callback(response);
 				  });

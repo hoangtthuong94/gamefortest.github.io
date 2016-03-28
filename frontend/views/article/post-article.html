@@ -1,0 +1,179 @@
+<div ng-controller="FestivalCtrl" id="postcontent" class="col-md-8 col-md-offset-2" >
+    <form name="createPostForm">
+                    <h1 class="static-header"><span class="glyphicon glyphicon-edit"></span> Thêm lễ hội</h1>
+                    <div class="feedback-form">
+                        <div class="feedback-notes">Những lễ hội bạn biết vẫn chưa có trên <b>Lehoiviet.vn</b>? Chia sẻ với cộng đồng ngay!</div>
+                        <div class="feedback-table">
+                            <section>
+                                <div class="infomation-box">
+                                    <div class="infomation-name">Thông tin cơ bản</div>
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Tên lễ hội<span> *</span></div>
+                                            <div class="details col-xs-9 row">
+                                                <input ng-model="title" type="text" class="col-xs-9" name="title" required="required" />
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Loại lễ hội<span> *</span></div>
+                                            <div class="details col-xs-9 row">
+                                                <select class="col-xs-3" ng-model="typeList">
+                                                    <option value="Văn hóa">Văn hóa</option>
+                                                    <option value="Âm nhạc">Âm nhạc</option>
+                                                    <option value="Sách">Sách</option>
+                                                    <option value="Ẩm thực">Ẩm thực</option>
+                                                    <option value="Khác">Khác</option>
+                                                </select>
+                                            </div>
+                                            </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Tên địa điểm<span> *</span></div>
+                                            <div class="details col-xs-9 row">
+                                                <input class="col-xs-9" type="text"/>
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Địa chỉ<span> *</span></div>
+                                            <div class="details col-xs-9 row">
+                                                <select class="col-xs-4" id="ddlCountries" data-val-number="Chọn Loại Hình" data-val="true">
+                                                    <option value="">TP.Hồ Chí Minh</option>
+                                                    <option value="">Đà Nẵng</option> 
+                                                </select>
+                                                <select class="col-xs-4" id="ddlProvinces" data-val-number="Chọn Loại Hình" data-val="true">
+                                                    <option value="" selected="selected">Quận 1</option>
+                                                    <option value="">Quận 2</option> 
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Gần khu vực</div>
+                                            <div class="details col-xs-9 row">
+                                                <input ng-model="nearAddress" class="col-xs-9" type="text"/>
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Chỉ đường chi tiết</div>
+                                            <div class="details col-xs-9 row">
+                                                <input ng-model="detailsAddress" class="col-xs-9" type="text"/>
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Mô tả sơ lược</div>
+                                            <div class="details col-xs-9 row">
+                                                <input ng-model="description" class="col-xs-9" type="text"/>
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Thông tin chi tiết</div>
+                                            <div class="details col-xs-9 row">
+                                                <textarea ng-model="content" class="col-xs-9"/>
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                </div><!--end:infomation-box-->
+                            </section>
+
+                            <section>
+                                <div class="infomation-box">
+                                    <div class="infomation-name">Thông tin thời gian</div>
+                                    
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Thời gian bắt đầu</div>
+                                            <div class="details col-xs-9 row">
+                                                <input ng-model="timeBegin" class="col-xs-9" type="text" name="timeBegin"/>
+                                            </div>
+                                            </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Thời gian kết thúc</div>
+                                            <div class="details col-xs-9 row">
+                                                <input ng-model="timeEnd" class="col-xs-9" type="text" name="timeEnd"/>
+                                            </div>
+                                            </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Giá</div>
+                                            <div class="details col-xs-9 row">
+                                                <input ng-model="priceTicket" class="col-xs-9" type="text"/>
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                </div><!--end:infomation-box-->
+                            </section>
+                            <section>
+                                <div class="infomation-box">
+                                    <div class="infomation-name">Thông tin nhà tổ chức</div>
+                                    
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Điện thoại</div>
+                                            <div class="details col-xs-9 row">
+                                                <input ng-model="phoneNumber" class="col-xs-9" type="text"/>
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Email</div>
+                                            <div class="details col-xs-9 row">
+                                                <input ng-model="emailAddress"  class="col-xs-9" type="text"/>
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                    <div class="infomation-content row">
+                                        <div class="box-info-normal">
+                                            <div class="lable col-xs-3">Website</div>
+                                            <div class="details col-xs-9 row">
+                                                <input ng-model="website" class="col-xs-9" type="text"/>
+                                            </div>
+                                        </div>
+                                    </div><!--end:infomation-content-->
+                                </div><!--end:infomation-box-->
+                            </section>
+                        </div>
+                        <div class="row">
+                            <button ng-click="postFestival()" class="col-xs-12 create-festival"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Thêm lễ hội</button>
+                        </div>
+                    </div><!--end:feedback-form-->
+    </form><!--end:form-->
+</div>
+
+<script>
+$(function() {
+
+    $('input[name="timeBegin"]').daterangepicker({
+        "singleDatePicker": true,
+        timePicker: true,
+        timePickerIncrement: 15,
+        locale: {
+            format: 'MM/DD/YYYY hh:mm A'
+        }
+    });
+
+    $('input[name="timeEnd"]').daterangepicker({
+        "singleDatePicker": true,
+        timePicker: true,
+        timePickerIncrement: 15,
+        locale: {
+            format: 'MM/DD/YYYY hh:mm A'
+        }
+    });
+});
+</script>

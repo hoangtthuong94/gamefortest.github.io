@@ -17,37 +17,30 @@
 
     <!--CSS customize-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/menuPost.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/postArticle.css">
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Noto+Serif:700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
-    <style type="text/css">
-</style>
+    <!--datetimepicker-->
+    <link rel="stylesheet" type="text/css" media="all" href="lib/bootstrap/bootstrap-datetimepicker/daterangepicker.css" />
+    <script type="text/javascript" src="lib/bootstrap/bootstrap-datetimepicker/moment.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/bootstrap-datetimepicker/daterangepicker.js"></script>
 </head>
 
 <body ng-controller="MainCtrl as main">
 
 
-    <div id="menu" ng-include="'views/public/menu.html'"></div>
-    <div ng-include="'views/public/header.html'"></div>
+    <div id="menuPost" ng-include="'views/public/menuPost.html'"></div>
 <!--     <div ng-include="'test.html'"></div> -->
     <div id="login" ng-include="'views/public/login.html'"></div> 
 
     <div id="#"></div>
     <div id="" class="container">
-        <section id="promotion" class="row" ng-include="'views/public/promotion.html'"></section>
-        <div id="main" class="row">
-
-            <div id="main-left" class="col-md-9">
-                <div ng-include="'views/public/content_home.html'"></div>
-            </div>
-
-            <div id="sidebar" class="col-md-3">
-                <div ng-include="'views/public/sidebar.html'"></div>
-            </div>
-        </div>
+        <div id="mainpost" class="row" ng-include="'post-article.html'"></div>
     </div>
 
     <section id="footer" ng-include="'views/public/footer.html'"></section>
@@ -56,13 +49,13 @@
     <div class="btn-top">
       <a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
     </div>
+    
 </body>
 
 <footer>
     <script type="text/javascript" src="js/script.js "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
-    <script src="https://code.angularjs.org/1.4.5/angular-cookies.js"></script>
     <script src="src/LeHoiViet.js"></script>  
     <script src="src/app/App.js"></script>  
     <script src="src/app/controllers/MainController.js"></script>  

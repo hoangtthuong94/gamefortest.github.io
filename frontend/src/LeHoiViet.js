@@ -17,3 +17,8 @@ myModule.config(function($routeProvider) {
             controller: 'LoginCtrl'
         });
     });
+
+myModule.config(function($httpProvider) {
+  $httpProvider.defaults.xsrfCookieName = 'csrftoken';
+  $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
+    });
